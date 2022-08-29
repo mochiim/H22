@@ -5,7 +5,7 @@ time = [] # [s]
 T_b = [] # Temperature of water inside bodum thermos mug
 T_t = [] # Temperature of water inside Temperfect mug
 
-with open("termokopper.txt") as lines:
+with open('termokopper.txt', 'r') as lines:
     for line in lines:
         row = line.split()
         time.append(row[0])
