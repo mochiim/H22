@@ -17,5 +17,6 @@ time = np.array(time)
 T_b = np.array(T_b)
 T_t = np.array(T_t)
 
-print(time)
+plt.plot(time, T_b)
+plt.show()
 #print(os.getcwd())
