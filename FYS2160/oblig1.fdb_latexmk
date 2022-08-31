@@ -1,12 +1,13 @@
 # Fdb version 3
-["bibtex oblig1"] 1661796992 "oblig1.aux" "oblig1.bbl" "oblig1" 1661799889
+["bibtex oblig1"] 1661973583 "oblig1.aux" "oblig1.bbl" "oblig1" 1661973585
   "/usr/local/texlive/2022/texmf-dist/bibtex/bst/revtex/apsrev4-2.bst" 1601932770 69609 e9dea59f0e753ccda3ddc8f5806d846d ""
-  "oblig1.aux" 1661799889 3006 2a6583a6f4e3bfd760e246d3806e8f0e "pdflatex"
-  "oblig1Notes.bib" 1661799889 709 c031ffd8df76ad44dbce05384942c570 "pdflatex"
+  "oblig1.aux" 1661973584 3231 991041f072f8e6ea02dbd530c0171053 "pdflatex"
+  "oblig1Notes.bib" 1661973584 709 c031ffd8df76ad44dbce05384942c570 "pdflatex"
   (generated)
   "oblig1.bbl"
   "oblig1.blg"
-["pdflatex"] 1661799887 "oblig1.tex" "oblig1.pdf" "oblig1" 1661799889
+["pdflatex"] 1661973583 "oblig1.tex" "oblig1.pdf" "oblig1" 1661973585
+  "/Users/rebeccanguyen/Documents/GitHub/H22/temperature.png" 1661964051 30441 aded9bfadabc54b4b07e8d745c85acec ""
   "/usr/local/texlive/2022/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "/usr/local/texlive/2022/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex7.tfm" 1246382020 1004 54797486969f23fa377b128694d548df ""
   "/usr/local/texlive/2022/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex9.tfm" 1246382020 996 a18840b13b499c08ac2de96a99eda4bc ""
@@ -180,10 +181,10 @@
   "/usr/local/texlive/2022/texmf-var/fonts/map/pdftex/updmap/pdftex.map" 1647878959 4410336 7d30a02e9fa9a16d7d1f8d037ba69641 ""
   "/usr/local/texlive/2022/texmf-var/web2c/pdftex/pdflatex.fmt" 1661429667 2826436 7c64879f9fd58527ca5194811b2cec0b ""
   "/usr/local/texlive/2022/texmf.cnf" 1647878952 577 209b46be99c9075fd74d4c0369380e8c ""
-  "oblig1.aux" 1661799889 3006 2a6583a6f4e3bfd760e246d3806e8f0e "pdflatex"
-  "oblig1.bbl" 1661796992 2650 e9c6074965d08172510e9259a1c1a753 "bibtex oblig1"
-  "oblig1.out" 1661799889 1362 478b7e60b7a0f7fa8580640a3a21eef4 "pdflatex"
-  "oblig1.tex" 1661799887 7170 9a97c53be9d480fe4f8e268f3af36c5e ""
+  "oblig1.aux" 1661973584 3231 991041f072f8e6ea02dbd530c0171053 "pdflatex"
+  "oblig1.bbl" 1661973583 2650 e9c6074965d08172510e9259a1c1a753 "bibtex oblig1"
+  "oblig1.out" 1661973584 1362 478b7e60b7a0f7fa8580640a3a21eef4 "pdflatex"
+  "oblig1.tex" 1661973581 7372 52ff4cf4ff99b46aee097a590b532e0e ""
   (generated)
   "oblig1.aux"
   "oblig1.log"
