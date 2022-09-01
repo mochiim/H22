@@ -1,6 +1,7 @@
 import numpy as np
 import matplotlib.pyplot as plt
 import os
+import scipy.stats as sc
 
 time = [] # [s]
 T_t = [] # Temperature of water inside Temperfect mug
@@ -18,14 +19,21 @@ time = np.array(time)
 T_t = np.array(T_t)
 T_b = np.array(T_b)
 
-plt.plot(time, T_t, label = "Temperfect mug")
-plt.plot(time, T_b, label = "Bodum mug")
+slope_t, intercept_t, r_t, p_t, se_t = sc.stats.linregress(time, T_t)
+slope_b, intercept_b, r_b, p_b, se_b = sc.stats.linregress(time, T_b)
+
+print(f"tau_1 = {slope_t}")
+print(f"tau_2 = {slope_b}")
+
+"""
+plt.plot(time, T_t, label = "Mug 1")
+plt.plot(time, T_b, label = "Mug 2")
 plt.xlabel("Time [s]")
 plt.ylabel("Temperature [c]")
 plt.legend()
-plt.savefig("temperature.png")
+plt.savefig("temperature1.png")
 plt.show()
+"""
 
 
-
-print(os.getcwd())
+#print(os.getcwd())
