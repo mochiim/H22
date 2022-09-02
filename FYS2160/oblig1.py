@@ -27,7 +27,7 @@ fig, (ax1, ax2) = plt.subplots(2)
 ax1.plot(time, T_t, label = "Mug 1")
 ax1.plot(time, slope_t*time + intercept_t)
 ax1.set_ylabel("Temperature [c]")
-
+plt.legend()
 
 
 ax2.plot(time, T_b, label = "Mug 2")
