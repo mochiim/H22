@@ -22,18 +22,22 @@ T_b = np.array(T_b)
 slope_t, intercept_t, r_t, p_t, se_t = sc.stats.linregress(time, T_t)
 slope_b, intercept_b, r_b, p_b, se_b = sc.stats.linregress(time, T_b)
 
-print(f"tau_1 = {slope_t}")
-print(f"tau_2 = {slope_b}")
 
-"""
-plt.plot(time, T_t, label = "Mug 1")
-plt.plot(time, T_b, label = "Mug 2")
-plt.xlabel("Time [s]")
-plt.ylabel("Temperature [c]")
+fig, (ax1, ax2) = plt.subplots(2)
+ax1.plot(time, T_t, label = "Mug 1")
+ax1.plot(time, slope_t*time + intercept_t)
+ax1.set_ylabel("Temperature [c]")
+
+
+
+ax2.plot(time, T_b, label = "Mug 2")
+ax2.plot(time, slope_b*time + intercept_b)
+ax2.set_xlabel("Time [s]")
+ax2.set_ylabel("Temperature [c]")
 plt.legend()
-plt.savefig("temperature1.png")
+#plt.savefig("temperature1.png")
 plt.show()
-"""
+
 
 
 #print(os.getcwd())
