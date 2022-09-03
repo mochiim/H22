@@ -44,30 +44,50 @@
 
 % the fundamental components of scientific reports:
 \section{Introduction}
-The Temperfect mug has an extra layer of insulation which brings your hot beverage
-to a more pleasant temperature, allowing you to enjoy your freshly-brewed drink right away.
-We want to better understand this mug by conducting an experiment where the
-cooling of beverage will be measured. The experiment will be conducted on both the Temperfect mug and Bodum thermos cup.
+In this experiment we want to study the temperature of a liquid in two thermos mugs; Bodum and Temperfect.
+Bodum mug is a regular thermos cup. The Temperfect mug extracts excess heat from your beverage and stores it in its walls. This allows the newly-brewed beverage to
+be enjøyed right away. In the walls of this mug is a layer of insulation which changes from solid to liquid as it absorbs heat. Thereafter, the heat is used to keep
+the beverage at a perfect temperature and the material returns to a solid state.
+We will be looking at temperature development over time for both mug. Both in order to see if the mug works as advertised and discuss if Temperfect can be modelled
+as an Einstein solid.
 
 \section{Theory}
 The multiplicity in an Einstein solid is given by
 \begin{equation}
-  \Omega(N, q) \approx \frac{(q+N)!}{q!N!}
+  \Omega(N, q) = \frac{(q+N -1)!}{q! (N -1)!} \approx \frac{(q+N)!}{q!N!}
 \end{equation}
-Entropy
+where q is number of energy units and N is number of oscillators. The expression has been further simplified using Stirling's approximation. We have considered the case q $\gg$ N (when there are
+more energy units than oscillators, the so-called 'high-temperature' limit) in order to simplify it.
+This gives us the expression for entropy
 \begin{equation}
   S \equiv k \ln\Omega
 \end{equation}
-Total energy of the solid
+where k is Boltzmann's constant.
+Internal energy of an Einstein solid is given by
+
 \begin{equation}
   U = \frac{N}{2}\epsilon + q\epsilon
 \end{equation}
+
 Which results in
 \begin{equation}
   \frac{dU}{dq} = \epsilon \rightarrow dU = \epsilon dq
 \end{equation}
-dU = Tds - pdv \\
-C_v = \frac{dU}{dT}
+with variations in.\\
+
+One of the most important identities in thermal dynamics, derived from the first law of thermodynamics, is as follows
+\begin{equation}
+dU = Tds - Pdv \\
+\end{equation}
+We assume constant pressure and volume which allows us to rewrite the equation as
+\begin{equation}
+  dU = Tds \rightarrow T = \frac{dU}{dS} = \frac{\epsilon dq}{dS}
+\end{equation}
+\\
+Lastly we have heat capacity
+\begin{equation}
+C_v = \frac{dU}{dT} = \frac{\epsilon dq}{dT}
+\end{equation}
 
 \section{Method}
 The Temperfect mug and Bodum thermos cup were both filled with 3dl of almost boiling water. The lids were not put on to allow temperature logging while the water in the mugs cooled. The temperature in the air outside of the mug was $T_a = 22^{\circ}$.
@@ -75,7 +95,17 @@ The Temperfect mug and Bodum thermos cup were both filled with 3dl of almost boi
 \section{Results}
 
 \begin{figure}
-  \includegraphics[scale=0.5]{temperature1.png}
+  \includegraphics[scale=0.5]{temp.png}
+  \caption{Temperature against time of both mugs}\label{figure}
+\end{figure}
+
+\begin{figure}
+  \includegraphics[scale=0.5]{tau_t.png}
+  \caption{}\label{figure}
+\end{figure}
+
+\begin{figure}
+  \includegraphics[scale=0.5]{tau_b.png}
   \caption{Temperature against time of both mugs}\label{figure}
 \end{figure}
 
