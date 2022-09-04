@@ -3,6 +3,8 @@ import matplotlib.pyplot as plt
 import os
 import scipy.stats as sc
 import random
+from math import factorial
+import scipy.constants as scc
 
 time = [] # [s]
 T_t = [] # Temperature of water inside Temperfect mug
@@ -19,29 +21,47 @@ time = np.array(time)
 T_t = np.array(T_t)
 T_b = np.array(T_b)
 
+################
+
 slope_t, intercept_t, r_t, p_t, se_t = sc.stats.linregress(time, T_t) # tau Temperfect
 slope_b, intercept_b, r_b, p_b, se_b = sc.stats.linregress(time, T_b) # tau bodum
 
-Ctb = 5
-N = 80000
-nstep = 15*N
-tau = N
-Tt = np.zeros(nstep).transpose()
-Tb = np.zeros(nstep).transpose()
-Tt[0] = 1
-Tb[0] = -1
-Tr = -1
+################
 
-for i in range(1, nstep + 1):
-    r = 4*random.randint(1, 1) - 2
-    DT = Tt[i - 1] - Tb[i - 1]
-    if (r < DT):
-        Tt[i] = Tt[i - 1] - 1/N
-        Tb[i] = Tb[i - 1] + Ctb/N
-    else:
-        Tt[i] = Tt[i-1] + 1/N
-        Tb[i] = Tb[i-1] - Ctb/N
+k = 1 #scc.Boltzmann
+N = int(300) # a suitable numbers of oscillators
+nstep = 800
+q = np.linspace(1, nstep, nstep) # number of energy units
+dq = (q[-1]-q[0])/(len(q)-1)
 
+omega = np.zeros(nstep) # multiplicity of an Einstein solid
+for i in range(nstep):
+    omega[i] = factorial(int(q[i]) + N - 1)/(factorial(int(q[i]))*factorial(N - 1))
+
+S = k*np.log(omega) # entropy
+
+dqdS = np.zeros(nstep)
+for i in range(1, nstep):
+    dqdS[i] = dq/(S[i] - S[i - 1])
+
+T = dqdS # temperature
+
+Cv = np.zeros(nstep) # heat capacity
+for i in range(1, nstep):
+    Cv[i] = dq/(T[i] - T[i -1])
+
+plt.plot(T, Cv)
+plt.xlabel("Temperature [°C]", fontsize = 18)
+plt.ylabel("Heat capacity [J/K]", fontsize = 18)
+plt.show()
+plt.savefig("q_mot_cv.png")
+
+
+plt.plot(T, S)
+plt.xlabel("Temperature [°C]", fontsize = 18)
+plt.ylabel("Entropy [J/K]", fontsize = 18)
+plt.show()
+plt.savefig("q_mot_S.png")
 
 # Temperature plot over time of both mugs
 """
@@ -54,6 +74,7 @@ plt.savefig("temp.png")
 plt.show()
 """
 
+# Plot tau of Temperfect
 """
 plt.plot(time, T_t, label = "Mug 1")
 plt.plot(time, slope_t*time + intercept_t, label = rf"Linear regression, $\tau$ = {slope_t}")
@@ -64,6 +85,7 @@ plt.savefig("tau_t.png")
 plt.show()
 """
 
+# Plot tau of Bodun
 """
 plt.plot(time, T_b, label = "Mug 2")
 #plt.plot(time, slope_b*time + intercept_b, label = rf"Linear regression, $\tau$ = {slope_b}")
