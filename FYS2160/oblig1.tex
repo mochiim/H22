@@ -11,6 +11,7 @@
 \usepackage{listings}
 \usepackage{subfigure}
 \usepackage{placeins}
+\usepackage{hyperref}
 \graphicspath{ {/Users/rebeccanguyen/Documents/GitHub/H22} }
 
 \hypersetup{
@@ -46,11 +47,9 @@
 % the fundamental components of scientific reports:
 \section{Introduction}
 In this experiment we want to study the temperature of a liquid in two thermos mugs; Bodum and Temperfect.
-Bodum mug is a regular thermos cup. The Temperfect mug extracts excess heat from your beverage and stores it in its walls. This allows the newly-brewed beverage to
-be enjøyed right away. In the walls of this mug is a layer of insulation which changes from solid to liquid as it absorbs heat. Thereafter, the heat is used to keep
-the beverage at a perfect temperature and the material returns to a solid state.
-We will be looking at temperature development over time for both mug. Both in order to see if the mug works as advertised and discuss if Temperfect can be modelled
-as an Einstein solid.
+Bodum mug is a regular thermos cup. The Temperfect mug removes excess heat from your beverage and stores it in its walls. This allows the newly-brewed beverage to
+be enjoyed right away. Temperfect add an extra layer of insulation which changes from solid to liquid as it absorbs heat. Thereafter, the heat is added back into the beverage and is used to keep it a perfect temperature. During this phase the material returns back to a solid state and the energy given up is called latent heat.
+We will be looking at temperature development over time for both mug. Both in order to see if the mug works as advertised and discuss if Temperfect can be modelled as an Einstein solid.
 
 \section{Theory}
 The multiplicity in an Einstein solid is given by
@@ -59,7 +58,7 @@ The multiplicity in an Einstein solid is given by
 \end{equation}
 where q is number of energy units $\epsilon$ and N is number of oscillators. The expression has been further simplified using Stirling's approximation. We have considered the case q $\gg$ N (when there are
 more energy units than oscillators, the so-called 'high-temperature' limit) in order to simplify it.
-This gives us the expression for entropy
+This further gives us the expression for entropy
 \begin{equation}
   S \equiv k \ln\Omega
 \end{equation}
@@ -98,6 +97,13 @@ Numerically we find this as
   C_{v, i} = \epsilon\frac{q_i - q_{i -1}}{T_i - T_{i -1}}
 \end{equation}
 
+Lastly the temperature of the water changes due to heat flux to its surroundings or air
+\begin{equation}
+  AJ_q = \frac{dQ}{dt} = mc_v\frac{dT}{dt}
+  \label{eq: heatflux}
+\end{equation}
+A is the area which heat flux takes place. Q, m and $c_V$ are attributes of the water (heat, mass and heat capacity).
+
 \section{Method}
 The Temperfect mug and Bodum thermos cup were both filled with 3dl of almost boiling water. The lids were not put on to allow temperature logging while the water in the mugs cooled. The temperature in the air outside of the mug was $T_a = 22^{\circ}$.
 \begin{figure}[!htb]
@@ -107,7 +113,12 @@ The Temperfect mug and Bodum thermos cup were both filled with 3dl of almost boi
 \FloatBarrier
 
 \section{Results}
-In figure (\ref{fig:temperature}) we have plotted temperature of both thermal mugs against time. Based on this figure we can conclude with Temperfect being mug 2 and Bodum being mug 1. The reasoning for this is mug 2's ability to bring the beverage temperature from almost boiling to a comfortable temperature rather fast. Based on the orange graph, the temperature stay in the so-called 'Ahhh zone' for a longer period
+In figure (\ref{fig:temperature}) we have plotted temperature of both thermal mugs against time. Based on this figure we can conclude with Temperfect being mug 2 and Bodum being mug 1. The reasoning for this is mug 2's ability to bring the beverage temperature from almost boiling to a comfortable temperature rather fast. This is because the material absorbs the heat and goes through a phase transition: from a solid to a liquid. This melting temperature $T_m$ happens at around 60$^{\circ}$ during the period 0-200s.
+Also, Temperfect (based on the orange graph) allows the temperature to stay in the so-called 'Ahhh zone'\footnote{A term for a comfortable drinking temperature used in this article describing \href{https://joeveo.com/pages/the-temperfect-mug}{Temperfect Technology}} for a longer period. During this phase the material puts its stored heat back into the beverage and returns back to a solid. This crystallising happens at around 700-2000s.
+When the material in the mug is all solid, the temperature drops as if it was a regular mug.
+Bodum on the other, steadily loses the heat of the beverage to the environment. This means the beverage takes longer time to reach a comfortable temperature, but will not stay there for long before the beverage is too cool.
+The mathematical explanation behind the Temperfect is based on heat flux. Temperature of water changes due to heat flux, which is related to temperature gradient (\ref{eq: heatflux}). By storing heat in the walls of the cup and later re-introduce it back into the beverage reduces the heat flux.
+
 \begin{figure}
   \includegraphics[scale=0.5]{temp.png}
   \caption{Temperature against time of both mugs}\label{fig:temperature}

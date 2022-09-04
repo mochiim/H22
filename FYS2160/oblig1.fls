@@ -800,6 +800,7 @@ INPUT /usr/local/texlive/2022/texmf-dist/tex/latex/placeins/placeins.sty
 INPUT /usr/local/texlive/2022/texmf-dist/tex/latex/placeins/placeins.sty
 INPUT /usr/local/texlive/2022/texmf-dist/tex/latex/placeins/placeins.sty
 INPUT /usr/local/texlive/2022/texmf-dist/tex/latex/placeins/placeins.sty
+INPUT /usr/local/texlive/2022/texmf-dist/tex/latex/hyperref/hyperref.sty
 INPUT /usr/local/texlive/2022/texmf-dist/tex/latex/listings/lstlang1.sty
 INPUT /usr/local/texlive/2022/texmf-dist/tex/latex/listings/lstlang1.sty
 INPUT /usr/local/texlive/2022/texmf-dist/tex/latex/listings/lstlang1.sty
@@ -905,12 +906,12 @@ INPUT /Users/rebeccanguyen/Documents/GitHub/H22/setup.png
 INPUT /Users/rebeccanguyen/Documents/GitHub/H22/setup.png
 INPUT /Users/rebeccanguyen/Documents/GitHub/H22/setup.png
 INPUT /Users/rebeccanguyen/Documents/GitHub/H22/setup.png
-INPUT /Users/rebeccanguyen/Documents/GitHub/H22/temp.png
-INPUT /Users/rebeccanguyen/Documents/GitHub/H22/temp.png
-INPUT /Users/rebeccanguyen/Documents/GitHub/H22/temp.png
-INPUT /Users/rebeccanguyen/Documents/GitHub/H22/temp.png
-INPUT /Users/rebeccanguyen/Documents/GitHub/H22/temp.png
 INPUT /usr/local/texlive/2022/texmf-var/fonts/map/pdftex/updmap/pdftex.map
+INPUT /Users/rebeccanguyen/Documents/GitHub/H22/temp.png
+INPUT /Users/rebeccanguyen/Documents/GitHub/H22/temp.png
+INPUT /Users/rebeccanguyen/Documents/GitHub/H22/temp.png
+INPUT /Users/rebeccanguyen/Documents/GitHub/H22/temp.png
+INPUT /Users/rebeccanguyen/Documents/GitHub/H22/temp.png
 INPUT /Users/rebeccanguyen/Documents/GitHub/H22/tau_t.png
 INPUT /Users/rebeccanguyen/Documents/GitHub/H22/tau_t.png
 INPUT /Users/rebeccanguyen/Documents/GitHub/H22/tau_t.png

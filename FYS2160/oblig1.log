@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022) (preloaded format=pdflatex 2022.8.25)  4 SEP 2022 15:05
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022) (preloaded format=pdflatex 2022.8.25)  4 SEP 2022 21:32
 entering extended mode
  \write18 enabled.
  %&-line parsing enabled.
@@ -653,36 +653,36 @@ Package: subfigure 2002/03/15 v2.1.5 subfigure package
 ) (/usr/local/texlive/2022/texmf-dist/tex/latex/placeins/placeins.sty
 Package: placeins 2005/04/18  v 2.2
 )
-Package hyperref Info: Option `colorlinks' set `true' on input line 20.
+Package hyperref Info: Option `colorlinks' set `true' on input line 21.
 (/usr/local/texlive/2022/texmf-dist/tex/latex/listings/lstlang1.sty
 File: lstlang1.sty 2020/03/24 1.8d listings language file
 )
 Class revtex4-2 Info: Unrecognized LaTeX tabular. Please update this document c
-lass! (Proceeding with fingers crossed.) on input line 38.
-Class revtex4-2 Info: cite was not loaded (OK!) on input line 38.
-Class revtex4-2 Info: mcite was not loaded (OK!) on input line 38.
-Class revtex4-2 Info: multicol was not loaded (OK!) on input line 38.
+lass! (Proceeding with fingers crossed.) on input line 39.
+Class revtex4-2 Info: cite was not loaded (OK!) on input line 39.
+Class revtex4-2 Info: mcite was not loaded (OK!) on input line 39.
+Class revtex4-2 Info: multicol was not loaded (OK!) on input line 39.
 (./oblig1.aux)
 \openout1 = `oblig1.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 38.
-LaTeX Font Info:    ... okay on input line 38.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 38.
-LaTeX Font Info:    ... okay on input line 38.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 38.
-LaTeX Font Info:    ... okay on input line 38.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 38.
-LaTeX Font Info:    ... okay on input line 38.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 38.
-LaTeX Font Info:    ... okay on input line 38.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 38.
-LaTeX Font Info:    ... okay on input line 38.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 38.
-LaTeX Font Info:    ... okay on input line 38.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 38.
-LaTeX Font Info:    ... okay on input line 38.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 38.
-LaTeX Font Info:    ... okay on input line 38.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 39.
+LaTeX Font Info:    ... okay on input line 39.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 39.
+LaTeX Font Info:    ... okay on input line 39.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 39.
+LaTeX Font Info:    ... okay on input line 39.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 39.
+LaTeX Font Info:    ... okay on input line 39.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 39.
+LaTeX Font Info:    ... okay on input line 39.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 39.
+LaTeX Font Info:    ... okay on input line 39.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 39.
+LaTeX Font Info:    ... okay on input line 39.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 39.
+LaTeX Font Info:    ... okay on input line 39.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 39.
+LaTeX Font Info:    ... okay on input line 39.
 (/usr/local/texlive/2022/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
 \scratchcounter=\count325
@@ -704,7 +704,7 @@ Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
 File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
 e
 ))
-Package hyperref Info: Link coloring ON on input line 38.
+Package hyperref Info: Link coloring ON on input line 39.
 (/usr/local/texlive/2022/texmf-dist/tex/latex/hyperref/nameref.sty
 Package: nameref 2021-04-02 v2.47 Cross-referencing by name of section
 (/usr/local/texlive/2022/texmf-dist/tex/latex/refcount/refcount.sty
@@ -716,84 +716,79 @@ Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
 )
 \c@section@level=\count331
 )
-LaTeX Info: Redefining \ref on input line 38.
-LaTeX Info: Redefining \pageref on input line 38.
-LaTeX Info: Redefining \nameref on input line 38.
+LaTeX Info: Redefining \ref on input line 39.
+LaTeX Info: Redefining \pageref on input line 39.
+LaTeX Info: Redefining \nameref on input line 39.
 (./oblig1.out) (./oblig1.out)
 \@outlinefile=\write5
 \openout5 = `oblig1.out'.
 
 \c@lstlisting=\count332
-Class revtex4-2 Info: Taking \maketitle back from hyperref on input line 38.
+Class revtex4-2 Info: Taking \maketitle back from hyperref on input line 39.
 \openout3 = `oblig1Notes.bib'.
 
-LaTeX Font Info:    Trying to load font information for U+msa on input line 57.
+LaTeX Font Info:    Trying to load font information for U+msa on input line 56.
 
 (/usr/local/texlive/2022/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 57.
+LaTeX Font Info:    Trying to load font information for U+msb on input line 56.
 
 (/usr/local/texlive/2022/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
-Underfull \hbox (badness 10000) in paragraph at lines 76--78
+Underfull \hbox (badness 10000) in paragraph at lines 75--77
 
  []
 
-</Users/rebeccanguyen/Documents/GitHub/H22/setup.png, id=39, 359.3425pt x 268.0
+</Users/rebeccanguyen/Documents/GitHub/H22/setup.png, id=43, 359.3425pt x 268.0
 0125pt>
 File: /Users/rebeccanguyen/Documents/GitHub/H22/setup.png Graphic file (type pn
 g)
 <use /Users/rebeccanguyen/Documents/GitHub/H22/setup.png>
 Package pdftex.def Info: /Users/rebeccanguyen/Documents/GitHub/H22/setup.png  u
-sed on input line 104.
+sed on input line 110.
 (pdftex.def)             Requested size: 179.6708pt x 134.00029pt.
-</Users/rebeccanguyen/Documents/GitHub/H22/temp.png, id=42, 462.528pt x 346.896
+[1{/usr/local/texlive/2022/texmf-var/fonts/map/pdftex/updmap/pdftex.map} </User
+s/rebeccanguyen/Documents/GitHub/H22/setup.png>]
+</Users/rebeccanguyen/Documents/GitHub/H22/temp.png, id=73, 462.528pt x 346.896
 pt>
 File: /Users/rebeccanguyen/Documents/GitHub/H22/temp.png Graphic file (type png
 )
 <use /Users/rebeccanguyen/Documents/GitHub/H22/temp.png>
 Package pdftex.def Info: /Users/rebeccanguyen/Documents/GitHub/H22/temp.png  us
-ed on input line 112.
+ed on input line 123.
 (pdftex.def)             Requested size: 231.26343pt x 173.44757pt.
-[1{/usr/local/texlive/2022/texmf-var/fonts/map/pdftex/updmap/pdftex.map} </User
-s/rebeccanguyen/Documents/GitHub/H22/setup.png>]
-
-LaTeX Warning: A float is stuck (cannot be placed); try class option [floatfix]
- on input line 115.
-
-</Users/rebeccanguyen/Documents/GitHub/H22/tau_t.png, id=68, 462.528pt x 346.89
+</Users/rebeccanguyen/Documents/GitHub/H22/tau_t.png, id=74, 462.528pt x 346.89
 6pt>
 File: /Users/rebeccanguyen/Documents/GitHub/H22/tau_t.png Graphic file (type pn
 g)
 <use /Users/rebeccanguyen/Documents/GitHub/H22/tau_t.png>
 Package pdftex.def Info: /Users/rebeccanguyen/Documents/GitHub/H22/tau_t.png  u
-sed on input line 119.
+sed on input line 130.
 (pdftex.def)             Requested size: 231.26343pt x 173.44757pt.
-[2 </Users/rebeccanguyen/Documents/GitHub/H22/temp.png> </Users/rebeccanguyen/D
-ocuments/GitHub/H22/tau_t.png>]
-</Users/rebeccanguyen/Documents/GitHub/H22/tau_b.png, id=76, 462.528pt x 346.89
+</Users/rebeccanguyen/Documents/GitHub/H22/tau_b.png, id=75, 462.528pt x 346.89
 6pt>
 File: /Users/rebeccanguyen/Documents/GitHub/H22/tau_b.png Graphic file (type pn
 g)
 <use /Users/rebeccanguyen/Documents/GitHub/H22/tau_b.png>
 Package pdftex.def Info: /Users/rebeccanguyen/Documents/GitHub/H22/tau_b.png  u
-sed on input line 125.
+sed on input line 136.
 (pdftex.def)             Requested size: 231.26343pt x 173.44757pt.
-(./oblig1.bbl) [3 </Users/rebeccanguyen/Documents/GitHub/H22/tau_b.png>] (./obl
-ig1.aux)
+[2 </Users/rebeccanguyen/Documents/GitHub/H22/temp.png> </Users/rebeccanguyen/D
+ocuments/GitHub/H22/tau_t.png> </Users/rebeccanguyen/Documents/GitHub/H22/tau_b
+.png>] (./oblig1.bbl) [3] (./oblig1.aux)
 Package rerunfilecheck Info: File `oblig1.out' has not changed.
-(rerunfilecheck)             Checksum: 325D8101C8703022941120DB5422ADBD;917.
+(rerunfilecheck)             Checksum: AC7118007D15703DC4A7D48D98C44DAD;1021.
  ) 
 Here is how much of TeX's memory you used:
- 24880 strings out of 478268
- 445191 string characters out of 5846347
- 931720 words of memory out of 5000000
- 42673 multiletter control sequences out of 15000+600000
+ 24893 strings out of 478268
+ 445367 string characters out of 5846347
+ 934668 words of memory out of 5000000
+ 42683 multiletter control sequences out of 15000+600000
  472515 words of font info for 41 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 84i,8n,80p,452b,418s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 84i,8n,80p,552b,418s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb
 ></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx9.pfb><
 /usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></
@@ -803,10 +798,10 @@ local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/loc
 al/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmr9.pfb></usr/local/
 texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/t
 exlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb>
-Output written on oblig1.pdf (3 pages, 954751 bytes).
+Output written on oblig1.pdf (3 pages, 960835 bytes).
 PDF statistics:
- 128 PDF objects out of 1000 (max. 8388607)
- 96 compressed objects within 1 object stream
- 24 named destinations out of 1000 (max. 500000)
- 97 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 140 PDF objects out of 1000 (max. 8388607)
+ 106 compressed objects within 2 object streams
+ 27 named destinations out of 1000 (max. 500000)
+ 105 words of extra memory for PDF output out of 10000 (max. 10000000)
 

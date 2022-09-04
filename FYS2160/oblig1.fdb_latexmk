@@ -1,12 +1,12 @@
 # Fdb version 3
-["bibtex oblig1"] 1662296728 "oblig1.aux" "oblig1.bbl" "oblig1" 1662296730
+["bibtex oblig1"] 1662319950 "oblig1.aux" "oblig1.bbl" "oblig1" 1662319969
   "/usr/local/texlive/2022/texmf-dist/bibtex/bst/revtex/apsrev4-2.bst" 1601932770 69609 e9dea59f0e753ccda3ddc8f5806d846d ""
-  "oblig1.aux" 1662296730 2631 db14de6a27e7cb0638a8daa9832b671f "pdflatex"
-  "oblig1Notes.bib" 1662296730 104 4d8bb863c86f3d7b03a471e9d4707f34 "pdflatex"
+  "oblig1.aux" 1662319969 2890 ef143740691f809d632aa820ffdb723d "pdflatex"
+  "oblig1Notes.bib" 1662319969 303 c6c3e81779e69ac0b8ef6ead70a5b6f3 "pdflatex"
   (generated)
   "oblig1.bbl"
   "oblig1.blg"
-["pdflatex"] 1662296728 "oblig1.tex" "oblig1.pdf" "oblig1" 1662296730
+["pdflatex"] 1662319968 "oblig1.tex" "oblig1.pdf" "oblig1" 1662319969
   "/Users/rebeccanguyen/Documents/GitHub/H22/setup.png" 1662294590 691396 2a9cf4081a235996b0c63c3eefbf4bb4 ""
   "/Users/rebeccanguyen/Documents/GitHub/H22/tau_b.png" 1662226651 33363 b359c641ddb04b6cfa9064796f2520ca ""
   "/Users/rebeccanguyen/Documents/GitHub/H22/tau_t.png" 1662226559 35029 64be8d0ce79c124866748b7030d74208 ""
@@ -171,10 +171,10 @@
   "/usr/local/texlive/2022/texmf-var/fonts/map/pdftex/updmap/pdftex.map" 1647878959 4410336 7d30a02e9fa9a16d7d1f8d037ba69641 ""
   "/usr/local/texlive/2022/texmf-var/web2c/pdftex/pdflatex.fmt" 1661429667 2826436 7c64879f9fd58527ca5194811b2cec0b ""
   "/usr/local/texlive/2022/texmf.cnf" 1647878952 577 209b46be99c9075fd74d4c0369380e8c ""
-  "oblig1.aux" 1662296730 2631 db14de6a27e7cb0638a8daa9832b671f "pdflatex"
-  "oblig1.bbl" 1662296728 1982 35453d3875d823f0ec9445e740a573d9 "bibtex oblig1"
-  "oblig1.out" 1662296730 917 325d8101c8703022941120db5422adbd "pdflatex"
-  "oblig1.tex" 1662296726 5291 c4e1b7b2c3227df30db1ac511d62c6d2 ""
+  "oblig1.aux" 1662319969 2890 ef143740691f809d632aa820ffdb723d "pdflatex"
+  "oblig1.bbl" 1662319951 2236 650bddc8363de7c212746a4fc710a744 "bibtex oblig1"
+  "oblig1.out" 1662319969 1021 ac7118007d15703dc4a7d48d98c44dad "pdflatex"
+  "oblig1.tex" 1662319967 6861 8ccd423baa191318d48d47723bd92245 ""
   (generated)
   "oblig1.aux"
   "oblig1.log"
