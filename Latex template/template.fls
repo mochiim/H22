@@ -1,4 +1,4 @@
-PWD /Users/rebeccanguyen/Documents/GitHub/H22/AST2210
+PWD /Users/rebeccanguyen/Documents/GitHub/H22/Latex template
 INPUT /usr/local/texlive/2022/texmf.cnf
 INPUT /usr/local/texlive/2022/texmf-dist/web2c/texmf.cnf
 INPUT /usr/local/texlive/2022/texmf-var/web2c/pdftex/pdflatex.fmt
@@ -789,6 +789,18 @@ INPUT /usr/local/texlive/2022/texmf-dist/tex/latex/subfigure/subfigure.cfg
 INPUT /usr/local/texlive/2022/texmf-dist/tex/latex/subfigure/subfigure.cfg
 INPUT /usr/local/texlive/2022/texmf-dist/tex/latex/subfigure/subfigure.cfg
 INPUT /usr/local/texlive/2022/texmf-dist/tex/latex/subfigure/subfigure.cfg
+INPUT /usr/local/texlive/2022/texmf-dist/tex/latex/placeins/placeins.sty
+INPUT /usr/local/texlive/2022/texmf-dist/tex/latex/placeins/placeins.sty
+INPUT /usr/local/texlive/2022/texmf-dist/tex/latex/placeins/placeins.sty
+INPUT /usr/local/texlive/2022/texmf-dist/tex/latex/placeins/placeins.sty
+INPUT /usr/local/texlive/2022/texmf-dist/tex/latex/placeins/placeins.sty
+INPUT /usr/local/texlive/2022/texmf-dist/tex/latex/placeins/placeins.sty
+INPUT /usr/local/texlive/2022/texmf-dist/tex/latex/placeins/placeins.sty
+INPUT /usr/local/texlive/2022/texmf-dist/tex/latex/placeins/placeins.sty
+INPUT /usr/local/texlive/2022/texmf-dist/tex/latex/placeins/placeins.sty
+INPUT /usr/local/texlive/2022/texmf-dist/tex/latex/placeins/placeins.sty
+INPUT /usr/local/texlive/2022/texmf-dist/tex/latex/placeins/placeins.sty
+INPUT /usr/local/texlive/2022/texmf-dist/tex/latex/hyperref/hyperref.sty
 INPUT /usr/local/texlive/2022/texmf-dist/tex/latex/listings/lstlang1.sty
 INPUT /usr/local/texlive/2022/texmf-dist/tex/latex/listings/lstlang1.sty
 INPUT /usr/local/texlive/2022/texmf-dist/tex/latex/listings/lstlang1.sty

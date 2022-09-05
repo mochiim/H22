@@ -10,6 +10,7 @@ time = [] # [s]
 T_t = [] # Temperature of water inside Temperfect mug
 T_b = [] # Temperature of water inside bodum thermos mug
 
+# read termokopper.txt and store data in arrays
 with open('termokopper.txt', 'r') as lines:
     for line in lines:
         row = line.split()
@@ -21,12 +22,12 @@ time = np.array(time)
 T_t = np.array(T_t)
 T_b = np.array(T_b)
 
-################
+###### Calculate tau of both mugs  ##########
 
 slope_t, intercept_t, r_t, p_t, se_t = sc.stats.linregress(time, T_t) # tau Temperfect
 slope_b, intercept_b, r_b, p_b, se_b = sc.stats.linregress(time, T_b) # tau bodum
 
-################
+###### Einstein solid  ##########
 
 k = 1 #scc.Boltzmann
 N = int(300) # a suitable numbers of oscillators
@@ -50,18 +51,20 @@ Cv = np.zeros(nsteps) # heat capacity
 for i in range(1, nsteps):
     Cv[i] = dq/(T[i] - T[i -1])
 
+###### Attempt on translating MATLAB code from appendix A ##########
+"""
 Ctb = 5
 N = 80000
 nstep = 15*N
 tau = N
 Tt = np.zeros(nstep)
 Tb = np.zeros(nstep)
-Tt[0] = 1
+Tt[0] = 1iii
 Tb[0] = -1
 Tr = -1
 
 for i in range(1, nstep):
-    r = 4*random.uniform(1, 1) - 2
+    r = random.uniform(-2, 2)
     DT = Tt[i - 1] - Tb[i - 1]
     if (r < DT):
         Tt[i] = Tt[i - 1] - 1/N
@@ -73,7 +76,7 @@ for i in range(1, nstep):
 plt.plot(np.linspace(0, nstep, nstep)/tau, Tt, "r")
 plt.plot(np.linspace(0, nstep, nstep)/tau, Tb, "k")
 plt.show()
-
+"""
 # Temperature plot over time of both mugs
 """
 plt.plot(time, T_t, label = "Mug 1")

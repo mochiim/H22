@@ -97,13 +97,18 @@ Numerically we find this as
   C_{v, i} = \epsilon\frac{q_i - q_{i -1}}{T_i - T_{i -1}}
 \end{equation}
 
-Lastly the temperature of the water changes due to heat flux to its surroundings or air
+Temperature of the water changes due to heat flux to its surroundings or air
 \begin{equation}
   AJ_q = \frac{dQ}{dt} = mc_v\frac{dT}{dt}
   \label{eq: heatflux}
 \end{equation}
-A is the area which heat flux takes place. Q, m and $c_V$ are attributes of the water (heat, mass and heat capacity).
-
+A is the area which heat flux takes place. Q, m and $c_V$ are attributes of the water (heat, mass and heat capacity).\\
+Heat loss can be expressed as
+\begin{equation}
+  \frac{\Delta{T}}{\Delta{T_0}} = \exp(-t/\tau)
+  \label{eq: heatloss}
+\end{equation}
+$\Delta{T} = T_w - T_a$ is the temperature difference between the water and air. Subscripts 0 describes initial state, t is time and $\tau$ is a time constant.
 \section{Method}
 The Temperfect mug and Bodum thermos cup were both filled with 3dl of almost boiling water. The lids were not put on to allow temperature logging while the water in the mugs cooled. The temperature in the air outside of the mug was $T_a = 22^{\circ}$.
 \begin{figure}[!htb]
@@ -113,50 +118,194 @@ The Temperfect mug and Bodum thermos cup were both filled with 3dl of almost boi
 \FloatBarrier
 
 \section{Results}
+\begin{figure}[h]
+  \includegraphics[scale=0.5]{temp.png}
+  \caption{Temperature against time of both mugs}\label{fig:temperature}
+\end{figure}
 In figure (\ref{fig:temperature}) we have plotted temperature of both thermal mugs against time. Based on this figure we can conclude with Temperfect being mug 2 and Bodum being mug 1. The reasoning for this is mug 2's ability to bring the beverage temperature from almost boiling to a comfortable temperature rather fast. This is because the material absorbs the heat and goes through a phase transition: from a solid to a liquid. This melting temperature $T_m$ happens at around 60$^{\circ}$ during the period 0-200s.
 Also, Temperfect (based on the orange graph) allows the temperature to stay in the so-called 'Ahhh zone'\footnote{A term for a comfortable drinking temperature used in this article describing \href{https://joeveo.com/pages/the-temperfect-mug}{Temperfect Technology}} for a longer period. During this phase the material puts its stored heat back into the beverage and returns back to a solid. This crystallising happens at around 700-2000s.
 When the material in the mug is all solid, the temperature drops as if it was a regular mug.
 Bodum on the other, steadily loses the heat of the beverage to the environment. This means the beverage takes longer time to reach a comfortable temperature, but will not stay there for long before the beverage is too cool.
 The mathematical explanation behind the Temperfect is based on heat flux. Temperature of water changes due to heat flux, which is related to temperature gradient (\ref{eq: heatflux}). By storing heat in the walls of the cup and later re-introduce it back into the beverage reduces the heat flux.
 
-\begin{figure}
-  \includegraphics[scale=0.5]{temp.png}
-  \caption{Temperature against time of both mugs}\label{fig:temperature}
-\end{figure}
-\FloatBarrier
 
 
-\begin{figure}
+
+
+\begin{figure}[h]
   \includegraphics[scale=0.5]{tau_t.png}
-  \caption{}\label{fig:tau_t}
+  \caption{Model fitting using linear regression for mug 1}\label{fig:tau_t}
 \end{figure}
-\FloatBarrier
 
-\begin{figure}
+
+\begin{figure}[h]
   \includegraphics[scale=0.5]{tau_b.png}
-  \caption{}\label{fig: tau_b}
+  \caption{Model fitting using linear regression for mug 2}\label{fig: tau_b}
 \end{figure}
-\FloatBarrier
+
+Our attempt of model fitting the temperature gradient using linear regression, is shown in figure (\ref{fig:tau_t}) and (\ref{fig: tau_b}). $\tau$ describes rate of heat loss when looking at equation (\ref{eq: heatloss}). From this we were able to obtain values of $\tau$ for both mugs. However, this model does not describe our temperature model well. As seen from the figures, the model is just alright fiting for Temperfect, but completely wrong for Bodum.
+
+\begin{figure}[h]
+  \includegraphics[scale=0.5]{T_mot_cv.png}
+  \caption{Temperature against heat capacity for an Einstein solid}\label{fig: tagainstcv}
+\end{figure}
+When modelling the heat capacity related to temperature (for an Einstein solid)
 
 \section{Discussion and conclusion}
-
-
-
-
-%% When it comes to the bibliography I personally generate it using BibLaTeX. (see the link above if you're interested)
-%% You're obviously allowed to create the references section however you like.
-%% I'll keep it simple here.
-\section*{References}  % the asterisk (*) after \section makes the section numbering go away
-\begin{itemize}
-\item[-]Reference 1
-\item[-]Reference 2
-\end{itemize}
+Einstein solid can be used to model
 
 \newpage
 %% if you want to include an appendix, this is how you do it
 \appendix
-\section{Name of appendix}
-This will be the body of the appendix.
+\section{Concept questions}
+1. A thermos bottle with a piston instead of a lid contains a fixed amount of gas. Because it is a thermos
+bottle, no heat can enter or leave the bottle. The
+piston is then pushed in, compressing the gas. \\
+(a) Does the pressure of the gas increase, decrease,
+or stay the same?\\
+(b) Does the temperature of the gas increase, decrease, or stay the same?\\
+(c) Describe the behaviour of the molecules of gas
+during the compression and support your answers to (a) and (b) with an explanation in
+terms of their behaviour. \\
+(d) Are there an other properties of the gas that
+change?\\
 
 
+\section{Code}
+\begin{lstlisting}[language=Python]
+import numpy as np
+import matplotlib.pyplot as plt
+import os
+import scipy.stats as sc
+import random
+from math import factorial
+import scipy.constants as scc
+
+time = [] # [s]
+T_t = [] # Temperature of water inside Temperfect mug
+T_b = [] # Temperature of water inside bodum thermos mug
+
+# read termokopper.txt and store data in arrays
+with open('termokopper.txt', 'r') as lines:
+    for line in lines:
+        row = line.split()
+        time.append(float(row[0]))
+        T_t.append(float(row[1]))
+        T_b.append(float(row[2]))
+
+time = np.array(time)
+T_t = np.array(T_t)
+T_b = np.array(T_b)
+
+###### Calculate tau of both mugs  ##########
+
+slope_t, intercept_t, r_t, p_t, se_t = sc.stats.linregress(time, T_t)
+slope_b, intercept_b, r_b, p_b, se_b = sc.stats.linregress(time, T_b)
+
+###### Einstein solid  ##########
+
+k = 1 #scc.Boltzmann
+N = int(300) # a suitable numbers of oscillators
+nsteps = 800
+q = np.linspace(1, nsteps, nsteps) # number of energy units
+dq = (q[-1]-q[0])/(len(q)-1)
+
+omega = np.zeros(nsteps) # multiplicity of an Einstein solid
+for i in range(nsteps):
+    omega[i] = factorial(int(q[i]) + N - 1)/(factorial(int(q[i]))
+    *factorial(N - 1))
+
+S = k*np.log(omega) # entropy
+
+dqdS = np.zeros(nsteps)
+for i in range(1, nsteps):
+    dqdS[i] = dq/(S[i] - S[i - 1])
+
+T = dqdS # temperature
+
+Cv = np.zeros(nsteps) # heat capacity
+for i in range(1, nsteps):
+    Cv[i] = dq/(T[i] - T[i -1])
+
+###### Attempt on translating MATLAB code from appendix A ##########
+
+Ctb = 5
+N = 80000
+nstep = 15*N
+tau = N
+Tt = np.zeros(nstep)
+Tb = np.zeros(nstep)
+Tt[0] = 1
+Tb[0] = -1
+Tr = -1
+
+for i in range(1, nstep):
+    r = random.uniform(-2, 2)
+    DT = Tt[i - 1] - Tb[i - 1]
+    if (r < DT):
+        Tt[i] = Tt[i - 1] - 1/N
+        Tb[i] = Tb[i - 1] + Ctb/N
+    else:
+        Tt[i] = Tt[i-1] + 1/N
+        Tb[i] = Tb[i-1] - Ctb/N
+
+plt.plot(np.linspace(0, nstep, nstep)/tau, Tt, "r")
+plt.plot(np.linspace(0, nstep, nstep)/tau, Tb, "k")
+plt.show()
+
+# Temperature plot over time of both mugs
+"""
+plt.plot(time, T_t, label = "Mug 1")
+plt.plot(time, T_b, label = "Mug 2")
+plt.xlabel("Time [s]", fontsize = 18)
+plt.ylabel("Temperature [°C]", fontsize = 18)
+plt.legend(prop={'size': 12})
+plt.savefig("temp.png")
+plt.show()
+"""
+
+# Plot tau of Temperfect
+"""
+plt.plot(time, T_t, label = "Mug 1")
+plt.plot(time, slope_t*time + intercept_t, label = rf"Linear regression,
+$\tau$ = {slope_t}")
+plt.xlabel("Time [s]", fontsize = 18)
+plt.ylabel("Temperature [°C]", fontsize = 18)
+plt.legend(prop={'size': 12})
+#plt.savefig("tau_t.png")
+plt.show()
+"""
+
+# Plot tau of Bodun
+"""
+plt.plot(time, T_b, label = "Mug 2")
+plt.plot(time, slope_b*time + intercept_b, label = rf"Linear regression,
+ $\tau$ = {slope_b}")
+plt.xlabel("Time [s]", fontsize = 18)
+plt.ylabel("Temperature [°C]", fontsize = 18)
+plt.legend(prop={'size': 12})
+plt.savefig("tau_b.png")
+plt.show()
+"""
+
+# plot T against S
+"""
+plt.plot(T, S)
+plt.xlabel("Temperature [°C]", fontsize = 18)
+plt.ylabel("Entropy [J/K]", fontsize = 18)
+plt.savefig("T_mot_S.png")
+plt.show()
+"""
+
+# plot T against Cv
+"""
+plt.plot(T, Cv)
+plt.xlabel("Temperature [°C]", fontsize = 18)
+plt.ylabel("Heat capacity [J/K]", fontsize = 18)
+plt.savefig("T_mot_cv.png")
+plt.show()
+"""
+
+#print(os.getcwd())
+\end{lstlisting}
 \end{document}

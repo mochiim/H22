@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022) (preloaded format=latex 2022.8.25)  5 SEP 2022 14:30
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022) (preloaded format=latex 2022.8.25)  5 SEP 2022 19:32
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -748,21 +748,6 @@ Class revtex4-2 Info: Taking \maketitle back from hyperref on input line 39.
 \openout3 = `oblig1Notes.bib'.
 
 
-! LaTeX Error: Cannot determine size of graphic in /Users/rebeccanguyen/Documen
-ts/GitHub/H22/setup.png (no BoundingBox).
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.110   \includegraphics[scale=0.5]{setup.png}
-                                              
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-File: /Users/rebeccanguyen/Documents/GitHub/H22/setup.png Graphic file (type ep
-s)
-</Users/rebeccanguyen/Documents/GitHub/H22/setup.png>
 Overfull \vbox (672.0pt too high) has occurred while \output is active
 \vbox(0.0+0.0)x510.0
 .\vbox(672.0+0.0)x510.0
@@ -2596,7 +2581,7 @@ fmark \ETC.}
 ...\rule(*+*)x0.0
 ...\glue 0.0 plus 1.0fil
 ...\hbox(0.0+603.83508)x246.0, shifted -10.0
-....\vbox(0.0+603.83508)x246.0, glue set - 0.63179
+....\vbox(0.0+603.83508)x246.0, glue set 0.15636
 .....\rule(0.0+0.0)x*
 .....\mark{}
 .....\mark{}
@@ -3259,20 +3244,10 @@ fmark \ETC.}
 .....\glue(\parskip) 0.0 plus 1.0
 .....\glue(\parskip) 0.0
 .....\glue(\lineskip) 1.0
-.....\hbox(6.7799+2.16492)x246.0, glue set 3.07657fil
+.....\hbox(6.7799+2.16492)x246.0, glue set 2.65973fil
 ......\hbox(0.0+0.0)x10.0
-......\3.08632 L
-......\3.08632 a
-......\3.08632 s
-......\3.08632 t
-......\3.08632 l
-......\3.08632 y
-......\glue(\spaceskip) 3.08633 plus 9.0
-......\3.08632 t
-......\3.08632 h
-......\3.08632 e
-......\glue(\spaceskip) 3.08633 plus 9.0
-......\3.08632 t
+......\3.08632 T
+......\kern-0.69995
 ......\3.08632 e
 ......\3.08632 m
 ......\3.08632 p
@@ -3317,10 +3292,7 @@ fmark \ETC.}
 ......\3.08632 e
 ......\3.08632 a
 ......\3.08632 t
-......\glue(\rightskip) 0.0 plus 3.08635fil
-.....\penalty 200
-.....\glue(\baselineskip) 1.05518
-.....\hbox(6.7799+2.16492)x246.0, glue set 31.00066fil
+......\glue(\spaceskip) 3.08633 plus 9.0
 ......\3.08632 ^^] (ligature fl)
 ......\3.08632 u
 ......\3.08632 x
@@ -3331,7 +3303,10 @@ fmark \ETC.}
 ......\3.08632 i
 ......\3.08632 t
 ......\3.08632 s
-......\glue(\spaceskip) 3.08633 plus 9.0
+......\glue(\rightskip) 0.0 plus 3.08635fil
+.....\penalty 200
+.....\glue(\baselineskip) 1.05518
+.....\hbox(6.7799+2.16492)x246.0, glue set 41.29065fil
 ......\3.08632 s
 ......\3.08632 u
 ......\3.08632 r
@@ -3420,9 +3395,88 @@ T pdfma\ETC.}
 ........\kern 0.0
 ........\3.08632 )
 .......\write-{}
-.....\penalty 0
-.....\glue(\belowdisplayskip) 10.0 plus 2.0 minus 5.0
-.....\glue(\lineskip) 1.0
+.....\glue -4.0
+.....\glue 0.0
+.....\glue 0.0
+....\glue 0.0 plus 1.0fil minus 1.0fil
+..\glue 0.0
+
+
+! LaTeX Error: Cannot determine size of graphic in /Users/rebeccanguyen/Documen
+ts/GitHub/H22/setup.png (no BoundingBox).
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.115   \includegraphics[scale=0.5]{setup.png}
+                                              
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+File: /Users/rebeccanguyen/Documents/GitHub/H22/setup.png Graphic file (type ep
+s)
+</Users/rebeccanguyen/Documents/GitHub/H22/setup.png>
+
+! LaTeX Error: Cannot determine size of graphic in /Users/rebeccanguyen/Documen
+ts/GitHub/H22/temp.png (no BoundingBox).
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.122   \includegraphics[scale=0.5]{temp.png}
+                                             
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+File: /Users/rebeccanguyen/Documents/GitHub/H22/temp.png Graphic file (type eps
+)
+</Users/rebeccanguyen/Documents/GitHub/H22/temp.png>
+
+! LaTeX Error: Cannot determine size of graphic in /Users/rebeccanguyen/Documen
+ts/GitHub/H22/tau_t.png (no BoundingBox).
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.136   \includegraphics[scale=0.5]{tau_t.png}
+                                              
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+File: /Users/rebeccanguyen/Documents/GitHub/H22/tau_t.png Graphic file (type ep
+s)
+</Users/rebeccanguyen/Documents/GitHub/H22/tau_t.png>
+
+! LaTeX Error: Cannot determine size of graphic in /Users/rebeccanguyen/Documen
+ts/GitHub/H22/tau_b.png (no BoundingBox).
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.142   \includegraphics[scale=0.5]{tau_b.png}
+                                              
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+File: /Users/rebeccanguyen/Documents/GitHub/H22/tau_b.png Graphic file (type ep
+s)
+</Users/rebeccanguyen/Documents/GitHub/H22/tau_b.png>
+Overfull \vbox (672.0pt too high) has occurred while \output is active
+\vbox(0.0+0.0)x510.0
+.\vbox(672.0+0.0)x510.0
+..\hbox(10.0+662.0)x510.0, glue set 9.0fil
+...\rule(0.0+*)x0.0
+...\hbox(0.0+672.0)x246.0, shifted -10.0
+....\vbox(0.0+672.0)x246.0, glue set - 0.371
+.....\rule(0.0+0.0)x*
+.....\mark{}
+.....\mark{}
+.....\mark{}
+.....\glue(\topskip) 3.2201
 .....\hbox(6.7799+12.0999)x246.0, glue set 1.9764fil
 ......\3.08632 A
 ......\glue(\spaceskip) 3.08633 plus 9.0
@@ -3486,7 +3540,7 @@ T pdfma\ETC.}
 ......\3.08632 r
 ......\3.08632 e
 ......\glue(\rightskip) 0.0 plus 3.08635fil
-.....\penalty 300
+.....\penalty 150
 .....\glue(\lineskip) 1.0
 .....\hbox(6.7799+2.16492)x246.0, glue set 7.07034fil
 ......\3.08632 a
@@ -3547,58 +3601,275 @@ T pdfma\ETC.}
 ......\3.08632 )
 ......\3.08632 .
 ......\penalty 10000
+......\glue 0.0 plus 1.0fil
+......\penalty -10000
+......\glue(\rightskip) 0.0 plus 3.08635fil
+.....\penalty 50
+.....\glue(\baselineskip) 1.05518
+.....\hbox(6.7799+2.16492)x246.0, glue set 30.63849fil
+......\3.08632 H
+......\3.08632 e
+......\3.08632 a
+......\3.08632 t
+......\glue(\spaceskip) 3.08633 plus 9.0
+......\3.08632 l
+......\3.08632 o
+......\3.08632 s
+......\3.08632 s
+......\glue(\spaceskip) 3.08633 plus 9.0
+......\3.08632 c
+......\3.08632 a
+......\3.08632 n
+......\glue(\spaceskip) 3.08633 plus 9.0
+......\3.08632 b
+......\3.08632 e
+......\glue(\spaceskip) 3.08633 plus 9.0
+......\3.08632 e
+......\kern-0.1499
+......\3.08632 x
+......\3.08632 p
+......\3.08632 r
+......\3.08632 e
+......\3.08632 s
+......\3.08632 s
+......\3.08632 e
+......\3.08632 d
+......\glue(\spaceskip) 3.08633 plus 9.0
+......\3.08632 a
+......\3.08632 s
+......\penalty 10000
 ......\glue(\parfillskip) 0.0 plus 1.0fil
 ......\glue(\rightskip) 0.0 plus 3.08635fil
-.....\glue -2.16492
-.....\glue 0.0
-.....\glue 0.0
-....\glue 0.0 plus 1.0fil minus 1.0fil
-..\glue 0.0
-
-
-! LaTeX Error: Cannot determine size of graphic in /Users/rebeccanguyen/Documen
-ts/GitHub/H22/temp.png (no BoundingBox).
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.123   \includegraphics[scale=0.5]{temp.png}
-                                             
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-File: /Users/rebeccanguyen/Documents/GitHub/H22/temp.png Graphic file (type eps
-)
-</Users/rebeccanguyen/Documents/GitHub/H22/temp.png>
-
-! LaTeX Error: Cannot determine size of graphic in /Users/rebeccanguyen/Documen
-ts/GitHub/H22/tau_t.png (no BoundingBox).
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.130   \includegraphics[scale=0.5]{tau_t.png}
-                                              
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-File: /Users/rebeccanguyen/Documents/GitHub/H22/tau_t.png Graphic file (type ep
-s)
-</Users/rebeccanguyen/Documents/GitHub/H22/tau_t.png>
-Overfull \vbox (672.0pt too high) has occurred while \output is active
-\vbox(0.0+0.0)x510.0
-.\vbox(672.0+0.0)x510.0
-..\hbox(10.0+662.0)x510.0, glue set 9.0fil
-...\rule(0.0+*)x0.0
-...\hbox(0.0+672.0)x246.0, shifted -10.0
-....\vbox(0.0+672.0)x246.0, glue set 82.02065fil
-.....\rule(0.0+0.0)x*
-.....\mark{}
-.....\mark{}
-.....\mark{}
-.....\glue(\topskip) 3.2201
+.....\penalty 10000
+.....\glue(\abovedisplayskip) 10.0 plus 2.0 minus 5.0
+.....\glue(\lineskip) 1.0
+.....\hbox(29.9499+42.04977)x156.70605, shifted 89.29395
+......\hbox(29.9499+42.04977)x67.41212, display
+.......\hbox(0.0+0.0)x0.0
+........\special{ps:SDict begin H.S end}
+........\special{ps:SDict begin 10 H.A end}
+........\special{ps:SDict begin [/View [/XYZ H.V]/Dest (equation.2.11) cvn /DES
+T pdfma\ETC.}
+.......\hbox(0.0+0.0)x0.0
+.......\hbox(29.9499+42.04977)x17.33994
+........\hbox(29.9499+42.04977)x17.33994
+.........\hbox(0.0+0.0)x1.2, shifted -0.00002
+.........\vbox(29.9499+42.04977)x14.93994
+..........\hbox(6.7799+0.0)x14.93994, glue set 2.75fil
+...........\glue 0.0 plus 1.0fil minus 1.0fil
+...........\3.08632 ^^A
+...........\3.08632 T
+...........\glue 0.0 plus 1.0fil minus 1.0fil
+..........\kern19.85999
+..........\rule(6.62+0.0)x*
+..........\kern19.85999
+..........\hbox(6.7799+12.0999)x14.93994
+...........\3.08632 ^^A
+...........\hbox(6.50987+12.0999)x11.60999
+............\3.08632 T
+............\hbox(6.7799+0.09991)x5.5, shifted 11.99998
+.............\3.08632 0
+.........\hbox(0.0+0.0)x1.2, shifted -0.00002
+.......\glue(\thickmuskip) 3.08633 plus 3.08633 minus 1.23453
+.......\3.08632 =
+.......\glue(\thickmuskip) 3.08633 plus 3.08633 minus 1.23453
+.......\hbox(4.58496+2.16492)x14.29004
+........\kern 0.0
+........\3.08632 e
+........\kern-0.1499
+........\3.08632 x
+........\3.08632 p
+.......\hbox(0.0+0.0)x0.0
+.......\hbox(6.7799+4.2849)x23.96959
+........\hbox(6.7799+4.2849)x23.96959
+.........\hbox(6.7799+1.78992)x3.32996, shifted 2.49498
+..........\3.08632 (
+.........\hbox(6.7799+0.09991)x17.30968
+..........\3.08632 ^^@
+..........\3.08632 t
+..........\3.08632 =
+..........\3.08632 ^^\
+.........\hbox(6.7799+1.78992)x3.32996, shifted 2.49498
+..........\3.08632 )
+......\kern72.63402
+......\hbox(6.7799+1.78992)x16.65991, display
+.......\hbox(6.7799+1.78992)x16.65991
+........\3.08632 (
+........\3.08632 1
+........\3.08632 1
+........\kern 0.0
+........\3.08632 )
+.......\write-{}
+.....\penalty 0
+.....\glue(\belowdisplayskip) 10.0 plus 2.0 minus 5.0
+.....\glue(\lineskip) 1.0
+.....\hbox(6.7799+12.0999)x246.0, glue set 6.83893fil
+......\mathon
+......\3.08632 ^^A
+......\3.08632 T
+......\glue(\thickmuskip) 3.08633 plus 3.08633 minus 1.23453
+......\3.08632 =
+......\penalty 500
+......\glue(\thickmuskip) 3.08633 plus 3.08633 minus 1.23453
+......\3.08632 T
+......\hbox(4.58496+0.09991)x7.71997, shifted 11.99998
+.......\3.08632 w
+......\glue(\medmuskip) 2.22217 plus 1.11108 minus 2.22217
+......\3.08632 ^^@
+......\penalty 700
+......\glue(\medmuskip) 2.22217 plus 1.11108 minus 2.22217
+......\3.08632 T
+......\hbox(4.58496+0.09991)x4.93994, shifted 11.99998
+.......\3.08632 a
+......\mathoff
+......\glue(\spaceskip) 3.08633 plus 9.0
+......\3.08632 i
+......\3.08632 s
+......\glue(\spaceskip) 3.08633 plus 9.0
+......\3.08632 t
+......\3.08632 h
+......\3.08632 e
+......\glue(\spaceskip) 3.08633 plus 9.0
+......\3.08632 t
+......\3.08632 e
+......\3.08632 m
+......\3.08632 p
+......\3.08632 e
+......\3.08632 r
+......\3.08632 a
+......\3.08632 t
+......\3.08632 u
+......\3.08632 r
+......\3.08632 e
+......\glue(\spaceskip) 3.08633 plus 9.0
+......\3.08632 d
+......\3.08632 i
+......\3.08632 ^^[ (ligature ff)
+......\3.08632 e
+......\3.08632 r
+......\3.08632 e
+......\3.08632 n
+......\3.08632 c
+......\3.08632 e
+......\glue(\spaceskip) 3.08633 plus 9.0
+......\3.08632 b
+......\3.08632 e
+......\3.08632 t
+......\3.08632 w
+......\3.08632 e
+......\3.08632 e
+......\3.08632 n
+......\glue(\spaceskip) 3.08633 plus 9.0
+......\3.08632 t
+......\3.08632 h
+......\3.08632 e
+......\glue(\rightskip) 0.0 plus 3.08635fil
+.....\penalty 150
+.....\glue(\lineskip) 1.0
+.....\hbox(6.7799+2.16492)x246.0, glue set 3.50253fil
+......\3.08632 w
+......\kern-0.09999
+......\3.08632 a
+......\3.08632 t
+......\3.08632 e
+......\3.08632 r
+......\glue(\spaceskip) 3.08633 plus 9.0
+......\3.08632 a
+......\3.08632 n
+......\3.08632 d
+......\glue(\spaceskip) 3.08633 plus 9.0
+......\3.08632 a
+......\3.08632 i
+......\3.08632 r
+......\kern-0.54993
+......\3.08632 .
+......\glue(\spaceskip) 3.08633 plus 9.0
+......\3.08632 S
+......\3.08632 u
+......\3.08632 b
+......\3.08632 s
+......\3.08632 c
+......\3.08632 r
+......\3.08632 i
+......\3.08632 p
+......\3.08632 t
+......\3.08632 s
+......\glue(\spaceskip) 3.08633 plus 9.0
+......\3.08632 0
+......\glue(\spaceskip) 3.08633 plus 9.0
+......\3.08632 d
+......\3.08632 e
+......\3.08632 s
+......\3.08632 c
+......\3.08632 r
+......\3.08632 i
+......\3.08632 b
+......\3.08632 e
+......\3.08632 s
+......\glue(\spaceskip) 3.08633 plus 9.0
+......\3.08632 i
+......\3.08632 n
+......\3.08632 i
+......\3.08632 t
+......\3.08632 i
+......\3.08632 a
+......\3.08632 l
+......\glue(\spaceskip) 3.08633 plus 9.0
+......\3.08632 s
+......\3.08632 t
+......\3.08632 a
+......\3.08632 t
+......\3.08632 e
+......\3.08632 ,
+......\glue(\spaceskip) 3.08633 plus 9.0
+......\3.08632 t
+......\glue(\spaceskip) 3.08633 plus 9.0
+......\3.08632 i
+......\3.08632 s
+......\glue(\spaceskip) 3.08633 plus 9.0
+......\3.08632 t
+......\3.08632 i
+......\3.08632 m
+......\3.08632 e
+......\glue(\rightskip) 0.0 plus 3.08635fil
+.....\penalty 150
+.....\glue(\baselineskip) 1.05518
+.....\hbox(6.7799+0.09991)x246.0, glue set 35.6919fil
+......\3.08632 a
+......\3.08632 n
+......\3.08632 d
+......\glue(\spaceskip) 3.08633 plus 9.0
+......\mathon
+......\3.08632 ^^\
+......\mathoff
+......\glue(\spaceskip) 3.08633 plus 9.0
+......\3.08632 i
+......\3.08632 s
+......\glue(\spaceskip) 3.08633 plus 9.0
+......\3.08632 a
+......\glue(\spaceskip) 3.08633 plus 9.0
+......\3.08632 t
+......\3.08632 i
+......\3.08632 m
+......\3.08632 e
+......\glue(\spaceskip) 3.08633 plus 9.0
+......\3.08632 c
+......\3.08632 o
+......\3.08632 n
+......\3.08632 s
+......\3.08632 t
+......\3.08632 a
+......\3.08632 n
+......\3.08632 t
+......\3.08632 .
+......\penalty 10000
+......\glue(\parfillskip) 0.0 plus 1.0fil
+......\glue(\rightskip) 0.0 plus 3.08635fil
+.....\penalty -300
+.....\glue 22.76228 plus 4.49998 minus 0.89998
+.....\glue(\parskip) 0.0 plus 1.0
+.....\glue(\parskip) 0.0
+.....\glue(\baselineskip) 3.12018
 .....\hbox(6.7799+0.09991)x246.0, glue set 44.23027fil
 ......\glue(\leftskip) 0.0 plus 1.0fil
 ......\hbox(6.50987+0.09991)x22.48987
@@ -4050,6 +4321,95 @@ fmark \ETC.}
 .....\write-{}
 .....\penalty 10000
 .....\glue 14.22636
+.....\penalty 10000
+.....\glue 12.0 plus 2.0 minus 2.0
+.....\special{color push gray 0}
+.....\vbox(60.29991+0.0)x246.0
+......\hbox(36.135+0.0)x246.0, glue set 51.35757fil
+.......\glue(\leftskip) 0.0 plus 1.0fil
+.......\hbox(0.0+0.0)x0.0
+.......\hbox(36.135+0.0)x36.135
+........\hbox(36.135+0.0)x36.135
+.........\special{PSfile="/Users/rebeccanguyen/Documents/GitHub/H22/temp.png" l
+lx=0 lly\ETC.}
+.......\penalty 10000
+.......\glue(\parfillskip) 0.0
+.......\glue(\rightskip) 0.0 plus 3.08635fil
+......\write-{}
+......\glue 10.0
+......\glue(\baselineskip) 3.2201
+......\hbox(6.7799+2.16492)x246.0, glue set 23.2788fil
+.......\glue 0.0 plus 1.0fil
+.......\special{color push gray 0}
+.......\3.08632 F
+.......\3.08632 i
+.......\3.08632 g
+.......\3.08632 u
+.......\3.08632 r
+.......\3.08632 e
+.......\penalty 10000
+.......\glue(\spaceskip) 3.08633 plus 9.0
+.......\3.08632 2
+.......\3.08632 .
+.......\glue(\spaceskip) 3.08633 plus 9.0
+.......\special{color push gray 0}
+.......\special{ps:SDict begin H.S end}
+.......\special{ps:SDict begin H.R end}
+.......\special{ps:SDict begin [/View [/XYZ H.V]/Dest (figure.2) cvn /DEST pdfm
+ark en\ETC.}
+.......\special{color pop}
+.......\penalty 10000
+.......\glue -3.08633 plus -9.0
+.......\glue 3.08633 plus 9.0
+.......\3.08632 T
+.......\kern-0.69995
+.......\3.08632 e
+.......\3.08632 m
+.......\3.08632 p
+.......\3.08632 e
+.......\3.08632 r
+.......\3.08632 a
+.......\3.08632 t
+.......\3.08632 u
+.......\3.08632 r
+.......\3.08632 e
+.......\glue(\spaceskip) 3.08633 plus 9.0
+.......\3.08632 a
+.......\3.08632 g
+.......\kern-0.04994
+.......\3.08632 a
+.......\3.08632 i
+.......\3.08632 n
+.......\3.08632 s
+.......\3.08632 t
+.......\glue(\spaceskip) 3.08633 plus 9.0
+.......\3.08632 t
+.......\3.08632 i
+.......\3.08632 m
+.......\3.08632 e
+.......\glue(\spaceskip) 3.08633 plus 9.0
+.......\3.08632 o
+.......\3.08632 f
+.......\glue(\spaceskip) 3.08633 plus 9.0
+.......\3.08632 b
+.......\3.08632 o
+.......\3.08632 t
+.......\3.08632 h
+.......\glue(\spaceskip) 3.08633 plus 9.0
+.......\3.08632 m
+.......\3.08632 u
+.......\3.08632 g
+.......\3.08632 s
+.......\special{color pop}
+.......\glue 0.0 plus 1.0fil
+......\glue 2.0
+......\write-{}
+......\glue 0.0
+.....\special{color pop}
+.....\penalty 0
+.....\glue 12.0 plus 2.0 minus 2.0
+.....\glue 0.0 plus -1.0
+.....\penalty 10000
 .....\glue(\parskip) 0.0 plus 1.0
 .....\glue(\parskip) 0.0
 .....\glue(\baselineskip) 3.12018
@@ -4124,7 +4484,7 @@ ch/Su\ETC.}
 ......\3.08632 a
 ......\3.08632 l
 ......\glue(\rightskip) 0.0 plus 3.08635fil
-.....\penalty 10000
+.....\penalty 150
 .....\glue(\baselineskip) 1.05518
 .....\hbox(6.7799+2.16492)x246.0, glue set 4.57993fil
 ......\3.08632 m
@@ -4947,7 +5307,19 @@ er [0 0\ETC.}
 ......\3.08632 h
 ......\3.08632 e
 ......\glue(\rightskip) 0.0 plus 3.08635fil
-.....\glue(\baselineskip) 1.05518
+.....\glue -2.16492
+.....\glue 0.0
+.....\glue 0.0
+....\glue 0.0 plus 1.0fil minus 1.0fil
+...\glue 0.0 plus 1.0fil
+...\rule(*+*)x0.0
+...\glue 0.0 plus 1.0fil
+...\hbox(0.0+672.0)x246.0, shifted -10.0
+....\vbox(0.0+672.0)x246.0, glue set 266.31161fil
+.....\rule(0.0+0.0)x*
+.....\mark{}
+.....\mark{}
+.....\glue(\topskip) 3.2201
 .....\hbox(6.7799+2.16492)x246.0, glue set 0.66829fil
 ......\3.08632 t
 ......\3.08632 e
@@ -5553,248 +5925,672 @@ ch/Su\ETC.}
 ......\glue(\parfillskip) 0.0 plus 1.0fil
 ......\glue(\rightskip) 0.0 plus 3.08635fil
 .....\penalty 0
+.....\glue 12.0 plus 2.0 minus 2.0
+.....\special{color push gray 0}
+.....\vbox(60.29991+0.0)x246.0
+......\hbox(36.135+0.0)x246.0, glue set 51.35757fil
+.......\glue(\leftskip) 0.0 plus 1.0fil
+.......\hbox(0.0+0.0)x0.0
+.......\hbox(36.135+0.0)x36.135
+........\hbox(36.135+0.0)x36.135
+.........\special{PSfile="/Users/rebeccanguyen/Documents/GitHub/H22/tau_t.png" 
+llx=0 ll\ETC.}
+.......\penalty 10000
+.......\glue(\parfillskip) 0.0
+.......\glue(\rightskip) 0.0 plus 3.08635fil
+......\write-{}
+......\glue 10.0
+......\glue(\baselineskip) 3.2201
+......\hbox(6.7799+2.16492)x246.0, glue set 7.38757fil
+.......\glue 0.0 plus 1.0fil
+.......\special{color push gray 0}
+.......\3.08632 F
+.......\3.08632 i
+.......\3.08632 g
+.......\3.08632 u
+.......\3.08632 r
+.......\3.08632 e
+.......\penalty 10000
+.......\glue(\spaceskip) 3.08633 plus 9.0
+.......\3.08632 3
+.......\3.08632 .
+.......\glue(\spaceskip) 3.08633 plus 9.0
+.......\special{color push gray 0}
+.......\special{ps:SDict begin H.S end}
+.......\special{ps:SDict begin H.R end}
+.......\special{ps:SDict begin [/View [/XYZ H.V]/Dest (figure.3) cvn /DEST pdfm
+ark en\ETC.}
+.......\special{color pop}
+.......\penalty 10000
+.......\glue -3.08633 plus -9.0
+.......\glue 3.08633 plus 9.0
+.......\3.08632 M
+.......\3.08632 o
+.......\3.08632 d
+.......\3.08632 e
+.......\3.08632 l
+.......\glue(\spaceskip) 3.08633 plus 9.0
+.......\3.08632 ^^\ (ligature fi)
+.......\3.08632 t
+.......\3.08632 t
+.......\3.08632 i
+.......\3.08632 n
+.......\3.08632 g
+.......\glue(\spaceskip) 3.08633 plus 9.0
+.......\3.08632 u
+.......\3.08632 s
+.......\3.08632 i
+.......\3.08632 n
+.......\3.08632 g
+.......\glue(\spaceskip) 3.08633 plus 9.0
+.......\3.08632 l
+.......\3.08632 i
+.......\3.08632 n
+.......\3.08632 e
+.......\3.08632 a
+.......\3.08632 r
+.......\glue(\spaceskip) 3.08633 plus 9.0
+.......\3.08632 r
+.......\3.08632 e
+.......\kern-0.1499
+.......\3.08632 g
+.......\3.08632 r
+.......\3.08632 e
+.......\3.08632 s
+.......\3.08632 s
+.......\3.08632 i
+.......\3.08632 o
+.......\3.08632 n
+.......\glue(\spaceskip) 3.08633 plus 9.0
+.......\3.08632 f
+.......\3.08632 o
+.......\3.08632 r
+.......\glue(\spaceskip) 3.08633 plus 9.0
+.......\3.08632 m
+.......\3.08632 u
+.......\3.08632 g
+.......\glue(\spaceskip) 3.08633 plus 9.0
+.......\3.08632 1
+.......\special{color pop}
+.......\glue 0.0 plus 1.0fil
+......\glue 2.0
+......\write-{}
+......\glue 0.0
+.....\special{color pop}
+.....\penalty 0
+.....\glue 12.0 plus 2.0 minus 2.0
+.....\glue 0.0 plus -1.0
 .....\penalty 10000
-.....\glue 0.0 plus 1.0fil
-.....\glue 0.0
-.....\glue 20.0 plus 2.0 minus 4.0
+.....\penalty 0
+.....\glue 12.0 plus 2.0 minus 2.0
+.....\special{color push gray 0}
 .....\vbox(60.29991+0.0)x246.0
-......\special{color push gray 0}
-......\vbox(60.29991+0.0)x246.0
-.......\hbox(36.135+0.0)x246.0, glue set 51.35757fil
-........\glue(\leftskip) 0.0 plus 1.0fil
-........\hbox(0.0+0.0)x0.0
+......\hbox(36.135+0.0)x246.0, glue set 51.35757fil
+.......\glue(\leftskip) 0.0 plus 1.0fil
+.......\hbox(0.0+0.0)x0.0
+.......\hbox(36.135+0.0)x36.135
 ........\hbox(36.135+0.0)x36.135
-.........\hbox(36.135+0.0)x36.135
-..........\special{PSfile="/Users/rebeccanguyen/Documents/GitHub/H22/temp.png" 
-llx=0 lly\ETC.}
-........\penalty 10000
-........\glue(\parfillskip) 0.0
-........\glue(\rightskip) 0.0 plus 3.08635fil
-.......\write-{}
-.......\glue 10.0
-.......\glue(\baselineskip) 3.2201
-.......\hbox(6.7799+2.16492)x246.0, glue set 23.2788fil
-........\glue 0.0 plus 1.0fil
-........\special{color push gray 0}
-........\3.08632 F
-........\3.08632 i
-........\3.08632 g
-........\3.08632 u
-........\3.08632 r
-........\3.08632 e
-........\penalty 10000
-........\glue(\spaceskip) 3.08633 plus 9.0
-........\3.08632 2
-........\3.08632 .
-........\glue(\spaceskip) 3.08633 plus 9.0
-........\special{color push gray 0}
-........\special{ps:SDict begin H.S end}
-........\special{ps:SDict begin H.R end}
-........\special{ps:SDict begin [/View [/XYZ H.V]/Dest (figure.2) cvn /DEST pdf
-mark en\ETC.}
-........\special{color pop}
-........\penalty 10000
-........\glue -3.08633 plus -9.0
-........\glue 3.08633 plus 9.0
-........\3.08632 T
-........\kern-0.69995
-........\3.08632 e
-........\3.08632 m
-........\3.08632 p
-........\3.08632 e
-........\3.08632 r
-........\3.08632 a
-........\3.08632 t
-........\3.08632 u
-........\3.08632 r
-........\3.08632 e
-........\glue(\spaceskip) 3.08633 plus 9.0
-........\3.08632 a
-........\3.08632 g
-........\kern-0.04994
-........\3.08632 a
-........\3.08632 i
-........\3.08632 n
-........\3.08632 s
-........\3.08632 t
-........\glue(\spaceskip) 3.08633 plus 9.0
-........\3.08632 t
-........\3.08632 i
-........\3.08632 m
-........\3.08632 e
-........\glue(\spaceskip) 3.08633 plus 9.0
-........\3.08632 o
-........\3.08632 f
-........\glue(\spaceskip) 3.08633 plus 9.0
-........\3.08632 b
-........\3.08632 o
-........\3.08632 t
-........\3.08632 h
-........\glue(\spaceskip) 3.08633 plus 9.0
-........\3.08632 m
-........\3.08632 u
-........\3.08632 g
-........\3.08632 s
-........\special{color pop}
-........\glue 0.0 plus 1.0fil
-.......\glue 2.0
-.......\write-{}
-.......\glue 0.0
+.........\special{PSfile="/Users/rebeccanguyen/Documents/GitHub/H22/tau_b.png" 
+llx=0 ll\ETC.}
+.......\penalty 10000
+.......\glue(\parfillskip) 0.0
+.......\glue(\rightskip) 0.0 plus 3.08635fil
+......\write-{}
+......\glue 10.0
+......\glue(\baselineskip) 3.2201
+......\hbox(6.7799+2.16492)x246.0, glue set 7.38757fil
+.......\glue 0.0 plus 1.0fil
+.......\special{color push gray 0}
+.......\3.08632 F
+.......\3.08632 i
+.......\3.08632 g
+.......\3.08632 u
+.......\3.08632 r
+.......\3.08632 e
+.......\penalty 10000
+.......\glue(\spaceskip) 3.08633 plus 9.0
+.......\3.08632 4
+.......\3.08632 .
+.......\glue(\spaceskip) 3.08633 plus 9.0
+.......\special{color push gray 0}
+.......\special{ps:SDict begin H.S end}
+.......\special{ps:SDict begin H.R end}
+.......\special{ps:SDict begin [/View [/XYZ H.V]/Dest (figure.4) cvn /DEST pdfm
+ark en\ETC.}
+.......\special{color pop}
+.......\penalty 10000
+.......\glue -3.08633 plus -9.0
+.......\glue 3.08633 plus 9.0
+.......\3.08632 M
+.......\3.08632 o
+.......\3.08632 d
+.......\3.08632 e
+.......\3.08632 l
+.......\glue(\spaceskip) 3.08633 plus 9.0
+.......\3.08632 ^^\ (ligature fi)
+.......\3.08632 t
+.......\3.08632 t
+.......\3.08632 i
+.......\3.08632 n
+.......\3.08632 g
+.......\glue(\spaceskip) 3.08633 plus 9.0
+.......\3.08632 u
+.......\3.08632 s
+.......\3.08632 i
+.......\3.08632 n
+.......\3.08632 g
+.......\glue(\spaceskip) 3.08633 plus 9.0
+.......\3.08632 l
+.......\3.08632 i
+.......\3.08632 n
+.......\3.08632 e
+.......\3.08632 a
+.......\3.08632 r
+.......\glue(\spaceskip) 3.08633 plus 9.0
+.......\3.08632 r
+.......\3.08632 e
+.......\kern-0.1499
+.......\3.08632 g
+.......\3.08632 r
+.......\3.08632 e
+.......\3.08632 s
+.......\3.08632 s
+.......\3.08632 i
+.......\3.08632 o
+.......\3.08632 n
+.......\glue(\spaceskip) 3.08633 plus 9.0
+.......\3.08632 f
+.......\3.08632 o
+.......\3.08632 r
+.......\glue(\spaceskip) 3.08633 plus 9.0
+.......\3.08632 m
+.......\3.08632 u
+.......\3.08632 g
+.......\glue(\spaceskip) 3.08633 plus 9.0
+.......\3.08632 2
+.......\special{color pop}
+.......\glue 0.0 plus 1.0fil
+......\glue 2.0
+......\write-{}
+......\glue 0.0
+.....\special{color pop}
+.....\penalty 0
+.....\glue 12.0 plus 2.0 minus 2.0
+.....\glue 0.0 plus -1.0
+.....\penalty 10000
+.....\glue(\parskip) 0.0 plus 1.0
+.....\glue(\parskip) 0.0
+.....\glue(\baselineskip) 3.12018
+.....\hbox(6.7799+2.16492)x246.0, glue set 6.11343fil
+......\hbox(0.0+0.0)x10.0
+......\3.08632 O
+......\3.08632 u
+......\3.08632 r
+......\glue(\spaceskip) 3.08633 plus 9.0
+......\3.08632 a
+......\3.08632 t
+......\3.08632 t
+......\3.08632 e
+......\3.08632 m
+......\3.08632 p
+......\3.08632 t
+......\glue(\spaceskip) 3.08633 plus 9.0
+......\3.08632 o
+......\3.08632 f
+......\glue(\spaceskip) 3.08633 plus 9.0
+......\3.08632 m
+......\3.08632 o
+......\3.08632 d
+......\3.08632 e
+......\3.08632 l
+......\glue(\spaceskip) 3.08633 plus 9.0
+......\3.08632 ^^\ (ligature fi)
+......\3.08632 t
+......\3.08632 t
+......\3.08632 i
+......\3.08632 n
+......\3.08632 g
+......\glue(\spaceskip) 3.08633 plus 9.0
+......\3.08632 t
+......\3.08632 h
+......\3.08632 e
+......\glue(\spaceskip) 3.08633 plus 9.0
+......\3.08632 t
+......\3.08632 e
+......\3.08632 m
+......\3.08632 p
+......\3.08632 e
+......\3.08632 r
+......\3.08632 a
+......\3.08632 t
+......\3.08632 u
+......\3.08632 r
+......\3.08632 e
+......\glue(\spaceskip) 3.08633 plus 9.0
+......\3.08632 g
+......\3.08632 r
+......\3.08632 a
+......\3.08632 d
+......\3.08632 i
+......\3.08632 e
+......\3.08632 n
+......\3.08632 t
+......\glue(\rightskip) 0.0 plus 3.08635fil
+.....\penalty 150
+.....\glue(\baselineskip) 1.05518
+.....\hbox(6.7799+2.16492)x246.0, glue set 5.76364fil
+......\3.08632 u
+......\3.08632 s
+......\3.08632 i
+......\3.08632 n
+......\3.08632 g
+......\glue(\spaceskip) 3.08633 plus 9.0
+......\3.08632 l
+......\3.08632 i
+......\3.08632 n
+......\3.08632 e
+......\3.08632 a
+......\3.08632 r
+......\glue(\spaceskip) 3.08633 plus 9.0
+......\3.08632 r
+......\3.08632 e
+......\kern-0.1499
+......\3.08632 g
+......\3.08632 r
+......\3.08632 e
+......\3.08632 s
+......\3.08632 s
+......\3.08632 i
+......\3.08632 o
+......\3.08632 n
+......\3.08632 ,
+......\glue(\spaceskip) 3.08633 plus 9.0
+......\3.08632 i
+......\3.08632 s
+......\glue(\spaceskip) 3.08633 plus 9.0
+......\3.08632 s
+......\3.08632 h
+......\3.08632 o
+......\kern-0.25
+......\3.08632 w
+......\3.08632 n
+......\glue(\spaceskip) 3.08633 plus 9.0
+......\3.08632 i
+......\3.08632 n
+......\glue(\spaceskip) 3.08633 plus 9.0
+......\3.08632 ^^\ (ligature fi)
+......\3.08632 g
+......\3.08632 u
+......\3.08632 r
+......\3.08632 e
+......\glue(\spaceskip) 3.08633 plus 9.0
+......\3.08632 (
+......\special{color push rgb 0.5 0 0}
+......\hbox(0.0+0.0)x0.0, shifted 0.09991
+.......\special{ps:SDict begin H.S end}
+......\hbox(6.7799+0.09991)x5.0
+.......\special{color push rgb 0.5 0 0}
+.......\3.08632 3
+.......\special{color pop}
+......\hbox(0.0+0.0)x0.0, shifted -6.7799
+.......\special{ps:SDict begin H.R end}
+......\special{ps:SDict begin [/Color [1 0 0]/H /I/Border [0 0 0]BorderArrayPat
+ch/Su\ETC.}
 ......\special{color pop}
-.....\glue 0.0
-.....\glue 0.0
-....\glue 0.0 plus 1.0fil minus 1.0fil
-...\glue 0.0 plus 1.0fil
-...\rule(*+*)x0.0
-...\glue 0.0 plus 1.0fil
-...\hbox(0.0+672.0)x246.0, shifted -10.0
-....\vbox(0.0+672.0)x246.0, glue set 290.85005
-.....\rule(0.0+0.0)x*
-.....\mark{}
-.....\mark{}
-.....\mark{}
-.....\glue(\topskip) 9.9697
-.....\vbox(0.0303+0.0)x0.0, glue set 0.0303fil
-......\glue 0.0 plus 1.0fil
-.....\glue 0.0
-.....\glue 20.0 plus 2.0 minus 4.0
-.....\vbox(60.29991+0.0)x246.0
-......\special{color push gray 0}
-......\vbox(60.29991+0.0)x246.0
-.......\hbox(36.135+0.0)x246.0, glue set 51.35757fil
-........\glue(\leftskip) 0.0 plus 1.0fil
-........\hbox(0.0+0.0)x0.0
-........\hbox(36.135+0.0)x36.135
-.........\hbox(36.135+0.0)x36.135
-..........\special{PSfile="/Users/rebeccanguyen/Documents/GitHub/H22/tau_t.png"
- llx=0 ll\ETC.}
-........\penalty 10000
-........\glue(\parfillskip) 0.0
-........\glue(\rightskip) 0.0 plus 3.08635fil
-.......\write-{}
-.......\glue 10.0
-.......\glue(\baselineskip) 3.2201
-.......\hbox(6.7799+2.16492)x246.0, glue set 103.10881fil
-........\glue 0.0 plus 1.0fil
-........\special{color push gray 0}
-........\3.08632 F
-........\3.08632 i
-........\3.08632 g
-........\3.08632 u
-........\3.08632 r
-........\3.08632 e
-........\penalty 10000
-........\glue(\spaceskip) 3.08633 plus 9.0
-........\3.08632 3
-........\3.08632 .
-........\glue(\spaceskip) 3.08633 plus 9.0
-........\special{color push gray 0}
-........\special{ps:SDict begin H.S end}
-........\special{ps:SDict begin H.R end}
-........\special{ps:SDict begin [/View [/XYZ H.V]/Dest (figure.3) cvn /DEST pdf
-mark en\ETC.}
-........\special{color pop}
-........\penalty 10000
-........\glue -3.08633 plus -9.0
-........\glue 3.08633 plus 9.0
-........\special{color pop}
-........\glue 0.0 plus 1.0fil
-.......\glue 2.0
-.......\write-{}
-.......\glue 0.0
+......\3.08632 )
+......\glue(\spaceskip) 3.08633 plus 9.0
+......\3.08632 a
+......\3.08632 n
+......\3.08632 d
+......\glue(\spaceskip) 3.08633 plus 9.0
+......\3.08632 (
+......\special{color push rgb 0.5 0 0}
+......\special{ps:SDict begin H.S end}
+......\hbox(6.7799+0.0)x5.0
+.......\special{color push rgb 0.5 0 0}
+.......\3.08632 4
+.......\special{color pop}
+......\hbox(0.0+0.0)x0.0, shifted -6.7799
+.......\special{ps:SDict begin H.R end}
+......\special{ps:SDict begin [/Color [1 0 0]/H /I/Border [0 0 0]BorderArrayPat
+ch/Su\ETC.}
 ......\special{color pop}
-.....\glue 0.0
-.....\glue 0.0
-....\glue 0.0 plus 1.0fil minus 1.0fil
-..\glue 0.0
-
-
-! LaTeX Error: Cannot determine size of graphic in /Users/rebeccanguyen/Documen
-ts/GitHub/H22/tau_b.png (no BoundingBox).
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.136   \includegraphics[scale=0.5]{tau_b.png}
-                                              
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-File: /Users/rebeccanguyen/Documents/GitHub/H22/tau_b.png Graphic file (type ep
-s)
-</Users/rebeccanguyen/Documents/GitHub/H22/tau_b.png> (./oblig1.bbl)
-Overfull \vbox (672.0pt too high) has occurred while \output is active
-\vbox(0.0+0.0)x510.0
-.\vbox(672.0+0.0)x510.0, glue set 485.596fil
-..\mark{}
-..\mark{}
-..\glue(\topskip) 0.0
-..\hbox(10.0+110.779)x510.0, glue set 9.0fil
-...\rule(0.0+*)x0.0
-...\hbox(0.0+120.779)x246.0, shifted -10.0
-....\vbox(0.0+120.779)x246.0, glue set 20.23955
-.....\rule(0.0+0.0)x*
-.....\vbox(60.29991+0.0)x246.0
-......\special{color push gray 0}
-......\vbox(60.29991+0.0)x246.0
-.......\hbox(36.135+0.0)x246.0, glue set 51.35757fil
-........\glue(\leftskip) 0.0 plus 1.0fil
-........\hbox(0.0+0.0)x0.0
-........\hbox(36.135+0.0)x36.135
-.........\hbox(36.135+0.0)x36.135
-..........\special{PSfile="/Users/rebeccanguyen/Documents/GitHub/H22/tau_b.png"
- llx=0 ll\ETC.}
-........\penalty 10000
-........\glue(\parfillskip) 0.0
-........\glue(\rightskip) 0.0 plus 3.08635fil
-.......\write-{}
-.......\glue 10.0
-.......\glue(\baselineskip) 3.2201
-.......\hbox(6.7799+2.16492)x246.0, glue set 103.10881fil
-........\glue 0.0 plus 1.0fil
-........\special{color push gray 0}
-........\3.08632 F
-........\3.08632 i
-........\3.08632 g
-........\3.08632 u
-........\3.08632 r
-........\3.08632 e
-........\penalty 10000
-........\glue(\spaceskip) 3.08633 plus 9.0
-........\3.08632 4
-........\3.08632 .
-........\glue(\spaceskip) 3.08633 plus 9.0
-........\special{color push gray 0}
-........\special{ps:SDict begin H.S end}
-........\special{ps:SDict begin H.R end}
-........\special{ps:SDict begin [/View [/XYZ H.V]/Dest (figure.4) cvn /DEST pdf
-mark en\ETC.}
-........\special{color pop}
-........\penalty 10000
-........\glue -3.08633 plus -9.0
-........\glue 3.08633 plus 9.0
-........\special{color pop}
-........\glue 0.0 plus 1.0fil
-.......\glue 2.0
-.......\write-{}
-.......\glue 0.0
+......\3.08632 )
+......\3.08632 .
+......\glue(\spaceskip) 3.08633 plus 9.0
+......\mathon
+......\3.08632 ^^\
+......\mathoff
+......\glue(\rightskip) 0.0 plus 3.08635fil
+.....\glue(\baselineskip) 1.05518
+.....\hbox(6.7799+2.16492)x246.0, glue set 4.02913fil
+......\3.08632 d
+......\3.08632 e
+......\3.08632 s
+......\3.08632 c
+......\3.08632 r
+......\3.08632 i
+......\3.08632 b
+......\3.08632 e
+......\3.08632 s
+......\glue(\spaceskip) 3.08633 plus 9.0
+......\3.08632 r
+......\3.08632 a
+......\3.08632 t
+......\3.08632 e
+......\glue(\spaceskip) 3.08633 plus 9.0
+......\3.08632 o
+......\3.08632 f
+......\glue(\spaceskip) 3.08633 plus 9.0
+......\3.08632 h
+......\3.08632 e
+......\3.08632 a
+......\3.08632 t
+......\glue(\spaceskip) 3.08633 plus 9.0
+......\3.08632 l
+......\3.08632 o
+......\3.08632 s
+......\3.08632 s
+......\glue(\spaceskip) 3.08633 plus 9.0
+......\3.08632 w
+......\3.08632 h
+......\3.08632 e
+......\3.08632 n
+......\glue(\spaceskip) 3.08633 plus 9.0
+......\3.08632 l
+......\3.08632 o
+......\3.08632 o
+......\3.08632 k
+......\3.08632 i
+......\3.08632 n
+......\3.08632 g
+......\glue(\spaceskip) 3.08633 plus 9.0
+......\3.08632 a
+......\3.08632 t
+......\glue(\spaceskip) 3.08633 plus 9.0
+......\3.08632 e
+......\3.08632 q
+......\3.08632 u
+......\3.08632 a
+......\3.08632 t
+......\3.08632 i
+......\3.08632 o
+......\3.08632 n
+......\glue(\spaceskip) 3.08633 plus 9.0
+......\3.08632 (
+......\special{color push rgb 0.5 0 0}
+......\special{ps:SDict begin H.S end}
+......\hbox(6.7799+0.0)x10.0
+.......\special{color push rgb 0.5 0 0}
+.......\3.08632 1
+.......\3.08632 1
+.......\special{color pop}
+......\hbox(0.0+0.0)x0.0, shifted -6.7799
+.......\special{ps:SDict begin H.R end}
+......\special{ps:SDict begin [/Color [1 0 0]/H /I/Border [0 0 0]BorderArrayPat
+ch/Su\ETC.}
 ......\special{color pop}
-.....\glue 20.0 plus 2.0 minus 4.0
-.....\mark{}
-.....\mark{}
-.....\mark{}
-.....\kern 0.0
-.....\glue 0.0
-.....\glue 0.0
-....\glue 0.0 plus 1.0fil minus 1.0fil
-...\glue 0.0 plus 1.0fil
-...\rule(*+*)x0.0
-...\glue 0.0 plus 1.0fil
-...\hbox(0.0+120.779)x246.0, shifted -10.0
-....\vbox(0.0+120.779)x246.0
-.....\rule(0.0+0.0)x*
-.....\glue(\splittopskip) 3.2201
+......\3.08632 )
+......\3.08632 .
+......\glue(\rightskip) 0.0 plus 3.08635fil
+.....\glue(\baselineskip) 1.05518
+.....\hbox(6.7799+0.09991)x246.0, glue set 8.67445fil
+......\3.08632 F
+......\3.08632 r
+......\3.08632 o
+......\3.08632 m
+......\glue(\spaceskip) 3.08633 plus 9.0
+......\3.08632 t
+......\3.08632 h
+......\3.08632 i
+......\3.08632 s
+......\glue(\spaceskip) 3.08633 plus 9.0
+......\3.08632 w
+......\3.08632 e
+......\glue(\spaceskip) 3.08633 plus 9.0
+......\3.08632 w
+......\3.08632 e
+......\3.08632 r
+......\3.08632 e
+......\glue(\spaceskip) 3.08633 plus 9.0
+......\3.08632 a
+......\3.08632 b
+......\3.08632 l
+......\3.08632 e
+......\glue(\spaceskip) 3.08633 plus 9.0
+......\3.08632 t
+......\3.08632 o
+......\glue(\spaceskip) 3.08633 plus 9.0
+......\3.08632 o
+......\3.08632 b
+......\3.08632 t
+......\3.08632 a
+......\3.08632 i
+......\3.08632 n
+......\glue(\spaceskip) 3.08633 plus 9.0
+......\3.08632 v
+......\kern-0.25
+......\3.08632 a
+......\3.08632 l
+......\3.08632 u
+......\3.08632 e
+......\3.08632 s
+......\glue(\spaceskip) 3.08633 plus 9.0
+......\3.08632 o
+......\3.08632 f
+......\glue(\spaceskip) 3.08633 plus 9.0
+......\mathon
+......\3.08632 ^^\
+......\mathoff
+......\glue(\spaceskip) 3.08633 plus 9.0
+......\3.08632 f
+......\3.08632 o
+......\3.08632 r
+......\glue(\spaceskip) 3.08633 plus 9.0
+......\3.08632 b
+......\3.08632 o
+......\3.08632 t
+......\3.08632 h
+......\glue(\rightskip) 0.0 plus 3.08635fil
+.....\glue(\baselineskip) 3.12018
+.....\hbox(6.7799+2.16492)x246.0, glue set 14.55353fil
+......\3.08632 m
+......\3.08632 u
+......\3.08632 g
+......\3.08632 s
+......\3.08632 .
+......\glue(\spaceskip) 3.08633 plus 9.0
+......\3.08632 H
+......\3.08632 o
+......\kern-0.25
+......\3.08632 w
+......\3.08632 e
+......\kern-0.25
+......\3.08632 v
+......\kern-0.1499
+......\3.08632 e
+......\3.08632 r
+......\kern-0.39992
+......\3.08632 ,
+......\glue(\spaceskip) 3.08633 plus 9.0
+......\3.08632 t
+......\3.08632 h
+......\3.08632 i
+......\3.08632 s
+......\glue(\spaceskip) 3.08633 plus 9.0
+......\3.08632 m
+......\3.08632 o
+......\3.08632 d
+......\3.08632 e
+......\3.08632 l
+......\glue(\spaceskip) 3.08633 plus 9.0
+......\3.08632 d
+......\3.08632 o
+......\3.08632 e
+......\3.08632 s
+......\glue(\spaceskip) 3.08633 plus 9.0
+......\3.08632 n
+......\3.08632 o
+......\3.08632 t
+......\glue(\spaceskip) 3.08633 plus 9.0
+......\3.08632 d
+......\3.08632 e
+......\3.08632 s
+......\3.08632 c
+......\3.08632 r
+......\3.08632 i
+......\3.08632 b
+......\3.08632 e
+......\glue(\spaceskip) 3.08633 plus 9.0
+......\3.08632 o
+......\3.08632 u
+......\3.08632 r
+......\glue(\rightskip) 0.0 plus 3.08635fil
+.....\glue(\baselineskip) 1.05518
+.....\hbox(6.7799+2.16492)x246.0, glue set 8.53815fil
+......\3.08632 t
+......\3.08632 e
+......\3.08632 m
+......\3.08632 p
+......\3.08632 e
+......\3.08632 r
+......\3.08632 a
+......\3.08632 t
+......\3.08632 u
+......\3.08632 r
+......\3.08632 e
+......\glue(\spaceskip) 3.08633 plus 9.0
+......\3.08632 m
+......\3.08632 o
+......\3.08632 d
+......\3.08632 e
+......\3.08632 l
+......\glue(\spaceskip) 3.08633 plus 9.0
+......\3.08632 w
+......\3.08632 e
+......\3.08632 l
+......\3.08632 l
+......\3.08632 .
+......\glue(\spaceskip) 3.08633 plus 9.0
+......\3.08632 A
+......\3.08632 s
+......\glue(\spaceskip) 3.08633 plus 9.0
+......\3.08632 s
+......\3.08632 e
+......\3.08632 e
+......\3.08632 n
+......\glue(\spaceskip) 3.08633 plus 9.0
+......\3.08632 f
+......\3.08632 r
+......\3.08632 o
+......\3.08632 m
+......\glue(\spaceskip) 3.08633 plus 9.0
+......\3.08632 t
+......\3.08632 h
+......\3.08632 e
+......\glue(\spaceskip) 3.08633 plus 9.0
+......\3.08632 ^^\ (ligature fi)
+......\3.08632 g
+......\3.08632 u
+......\3.08632 r
+......\3.08632 e
+......\3.08632 s
+......\3.08632 ,
+......\glue(\spaceskip) 3.08633 plus 9.0
+......\3.08632 t
+......\3.08632 h
+......\3.08632 e
+......\glue(\rightskip) 0.0 plus 3.08635fil
+.....\glue(\baselineskip) 1.05518
+.....\hbox(6.7799+2.16492)x246.0, glue set 3.69113fil
+......\3.08632 m
+......\3.08632 o
+......\3.08632 d
+......\3.08632 e
+......\3.08632 l
+......\glue(\spaceskip) 3.08633 plus 9.0
+......\3.08632 i
+......\3.08632 s
+......\glue(\spaceskip) 3.08633 plus 9.0
+......\3.08632 j
+......\3.08632 u
+......\3.08632 s
+......\3.08632 t
+......\glue(\spaceskip) 3.08633 plus 9.0
+......\3.08632 a
+......\3.08632 l
+......\3.08632 r
+......\3.08632 i
+......\3.08632 g
+......\3.08632 h
+......\3.08632 t
+......\glue(\spaceskip) 3.08633 plus 9.0
+......\3.08632 ^^\ (ligature fi)
+......\3.08632 t
+......\3.08632 i
+......\3.08632 n
+......\3.08632 g
+......\glue(\spaceskip) 3.08633 plus 9.0
+......\3.08632 f
+......\3.08632 o
+......\3.08632 r
+......\glue(\spaceskip) 3.08633 plus 9.0
+......\3.08632 T
+......\kern-0.69995
+......\3.08632 e
+......\3.08632 m
+......\3.08632 p
+......\3.08632 e
+......\3.08632 r
+......\3.08632 f
+......\3.08632 e
+......\3.08632 c
+......\3.08632 t
+......\3.08632 ,
+......\glue(\spaceskip) 3.08633 plus 9.0
+......\3.08632 b
+......\kern-0.19995
+......\3.08632 u
+......\3.08632 t
+......\glue(\spaceskip) 3.08633 plus 9.0
+......\3.08632 c
+......\3.08632 o
+......\3.08632 m
+......\3.08632 p
+......\3.08632 l
+......\3.08632 e
+......\3.08632 t
+......\3.08632 e
+......\3.08632 l
+......\3.08632 y
+......\glue(\rightskip) 0.0 plus 3.08635fil
+.....\penalty 150
+.....\glue(\baselineskip) 1.05518
+.....\hbox(6.7799+2.16492)x246.0, glue set 41.76532fil
+......\3.08632 w
+......\3.08632 r
+......\3.08632 o
+......\3.08632 n
+......\3.08632 g
+......\glue(\spaceskip) 3.08633 plus 9.0
+......\3.08632 f
+......\3.08632 o
+......\3.08632 r
+......\glue(\spaceskip) 3.08633 plus 9.0
+......\3.08632 B
+......\3.08632 o
+......\3.08632 d
+......\3.08632 u
+......\3.08632 m
+......\3.08632 .
+......\penalty 10000
+......\glue(\parfillskip) 0.0 plus 1.0fil
+......\glue(\rightskip) 0.0 plus 3.08635fil
+.....\penalty -300
+.....\glue 22.76228 plus 4.49998 minus 0.89998
+.....\glue(\parskip) 0.0 plus 1.0
+.....\glue(\parskip) 0.0
+.....\glue(\baselineskip) 1.05518
 .....\hbox(6.7799+0.09991)x246.0, glue set 18.69843fil
 ......\glue(\leftskip) 0.0 plus 1.0fil
 ......\hbox(6.50987+0.09991)x18.43004
@@ -5841,10 +6637,31 @@ fmark \ETC.}
 .....\write-{}
 .....\penalty 10000
 .....\glue 14.22636
-.....\glue(\parskip) 0.0 plus 1.0
-.....\glue(\parskip) 0.0
-.....\glue(\baselineskip) 3.12018
-.....\hbox(6.7799+0.09991)x246.0, glue set 44.83475fil
+.....\glue 0.0 plus 1.0fil
+.....\glue 0.0
+.....\glue 0.0
+.....\glue 0.0
+....\glue 0.0 plus 1.0fil minus 1.0fil
+..\glue 0.0
+
+(./oblig1.bbl)
+Overfull \vbox (672.0pt too high) has occurred while \output is active
+\vbox(0.0+0.0)x510.0
+.\vbox(672.0+0.0)x510.0, glue set 509.98372fil
+..\mark{}
+..\mark{}
+..\glue(\topskip) 0.0
+..\hbox(10.0+86.39128)x510.0, glue set 9.0fil
+...\rule(0.0+*)x0.0
+...\hbox(0.0+96.39128)x246.0, shifted -10.0
+....\vbox(0.0+96.39128)x246.0, glue set 12.16492
+.....\rule(0.0+0.0)x*
+.....\mark{}
+.....\mark{}
+.....\mark{}
+.....\write-{}
+.....\glue(\topskip) 3.2201
+.....\hbox(6.7799+2.16492)x246.0, glue set 28.4342fil
 ......\glue(\leftskip) 0.0 plus 1.0fil
 ......\hbox(0.0+0.0)x0.0
 ......\glue 0.0
@@ -5855,93 +6672,681 @@ fmark \ETC.}
 ......\special{ps:SDict begin [/View [/XYZ H.V]/Dest (section*.7) cvn /DEST pdf
 mark \ETC.}
 ......\penalty 10000
-......\3.08632 R
-......\3.08632 E
-......\3.08632 F
-......\3.08632 E
-......\3.08632 R
-......\3.08632 E
-......\3.08632 N
+......\3.08632 A
+......\3.08632 p
+......\3.08632 p
+......\3.08632 e
+......\3.08632 n
+......\3.08632 d
+......\3.08632 i
+......\3.08632 x
+......\glue(\spaceskip) 3.08633 plus 9.0
+......\3.08632 A
+......\3.08632 :
+......\glue(\spaceskip) 3.08633 plus 9.0
 ......\3.08632 C
-......\3.08632 E
-......\3.08632 S
+......\3.08632 o
+......\3.08632 n
+......\3.08632 c
+......\3.08632 e
+......\3.08632 p
+......\3.08632 t
+......\glue(\spaceskip) 3.08633 plus 9.0
+......\3.08632 q
+......\3.08632 u
+......\3.08632 e
+......\3.08632 s
+......\3.08632 t
+......\3.08632 i
+......\3.08632 o
+......\3.08632 n
+......\3.08632 s
 ......\penalty 10000
 ......\glue(\parfillskip) 0.0
 ......\glue(\rightskip) 0.0 plus 3.08635fil
 .....\write-{}
 .....\penalty 10000
-.....\penalty 10000
 .....\glue 14.22636
-.....\glue -14.22636
-.....\glue 10.22636 plus -1.0 minus -1.0
-.....\glue(\parskip) 4.0 plus 2.0 minus 1.0
+.....\glue(\parskip) 0.0 plus 1.0
 .....\glue(\parskip) 0.0
-.....\glue(\baselineskip) 3.12018
-.....\hbox(6.7799+0.09991)x246.0, glue set 42.18536fil
-......\glue(\leftskip) 25.0
-......\hbox(2.53496+0.0)x0.0
-.......\glue 0.0
-.......\glue -21.0
-.......\glue -4.0
-.......\hbox(2.53496+0.0)x21.0, glue set 21.0fil
-........\special{color push gray 0}
-........\glue 0.0 plus 1.0fil minus 1.0fil
-........\hbox(2.53496+0.0)x0.0, glue set - 3.32996fil
-.........\glue 0.0 plus 1.0fil minus 1.0fil
-.........\3.08632 -
-........\special{color pop}
-.......\glue 4.0
-......\penalty 0
-......\3.08632 R
-......\3.08632 e
-......\3.08632 f
-......\3.08632 e
-......\3.08632 r
-......\3.08632 e
-......\3.08632 n
-......\3.08632 c
-......\3.08632 e
-......\glue(\spaceskip) 3.08633 plus 9.0
+.....\glue(\baselineskip) 1.05518
+.....\hbox(6.7799+2.16492)x246.0, glue set 0.21805fil
+......\hbox(0.0+0.0)x10.0
 ......\3.08632 1
-......\penalty 10000
-......\glue(\parfillskip) 0.0 plus 1.0fil
-......\glue(\rightskip) 0.0 plus 3.08635fil
-.....\penalty -51
-.....\glue 4.0 plus 2.0 minus 1.0
-.....\glue(\parskip) 4.0 plus 2.0 minus 1.0
-.....\glue(\parskip) 0.0
-.....\glue(\baselineskip) 3.12018
-.....\hbox(6.7799+0.09991)x246.0, glue set 42.18536fil
-......\glue(\leftskip) 25.0
-......\hbox(2.53496+0.0)x0.0
-.......\glue 0.0
-.......\glue -21.0
-.......\glue -4.0
-.......\hbox(2.53496+0.0)x21.0, glue set 21.0fil
-........\special{color push gray 0}
-........\glue 0.0 plus 1.0fil minus 1.0fil
-........\hbox(2.53496+0.0)x0.0, glue set - 3.32996fil
-.........\glue 0.0 plus 1.0fil minus 1.0fil
-.........\3.08632 -
-........\special{color pop}
-.......\glue 4.0
-......\penalty 0
-......\3.08632 R
+......\3.08632 .
+......\glue(\spaceskip) 3.08633 plus 9.0
+......\3.08632 A
+......\glue(\spaceskip) 3.08633 plus 9.0
+......\3.08632 t
+......\3.08632 h
 ......\3.08632 e
+......\3.08632 r
+......\3.08632 m
+......\3.08632 o
+......\3.08632 s
+......\glue(\spaceskip) 3.08633 plus 9.0
+......\3.08632 b
+......\3.08632 o
+......\3.08632 t
+......\3.08632 t
+......\3.08632 l
+......\3.08632 e
+......\glue(\spaceskip) 3.08633 plus 9.0
+......\3.08632 w
+......\3.08632 i
+......\3.08632 t
+......\3.08632 h
+......\glue(\spaceskip) 3.08633 plus 9.0
+......\3.08632 a
+......\glue(\spaceskip) 3.08633 plus 9.0
+......\3.08632 p
+......\3.08632 i
+......\3.08632 s
+......\3.08632 t
+......\3.08632 o
+......\3.08632 n
+......\glue(\spaceskip) 3.08633 plus 9.0
+......\3.08632 i
+......\3.08632 n
+......\3.08632 s
+......\3.08632 t
+......\3.08632 e
+......\3.08632 a
+......\3.08632 d
+......\glue(\spaceskip) 3.08633 plus 9.0
+......\3.08632 o
 ......\3.08632 f
+......\glue(\spaceskip) 3.08633 plus 9.0
+......\3.08632 a
+......\glue(\spaceskip) 3.08633 plus 9.0
+......\3.08632 l
+......\3.08632 i
+......\3.08632 d
+......\glue(\spaceskip) 3.08633 plus 9.0
+......\3.08632 c
+......\3.08632 o
+......\3.08632 n
+......\3.08632 t
+......\3.08632 a
+......\3.08632 i
+......\3.08632 n
+......\3.08632 s
+......\glue(\rightskip) 0.0 plus 3.08635fil
+.....\penalty 10000
+.....\glue(\baselineskip) 1.05518
+.....\hbox(6.7799+2.16492)x246.0, glue set 5.23679fil
+......\3.08632 a
+......\glue(\spaceskip) 3.08633 plus 9.0
+......\3.08632 ^^\ (ligature fi)
+......\3.08632 x
+......\kern-0.1499
+......\3.08632 e
+......\3.08632 d
+......\glue(\spaceskip) 3.08633 plus 9.0
+......\3.08632 a
+......\3.08632 m
+......\3.08632 o
+......\3.08632 u
+......\3.08632 n
+......\3.08632 t
+......\glue(\spaceskip) 3.08633 plus 9.0
+......\3.08632 o
+......\3.08632 f
+......\glue(\spaceskip) 3.08633 plus 9.0
+......\3.08632 g
+......\kern-0.04994
+......\3.08632 a
+......\3.08632 s
+......\3.08632 .
+......\glue(\spaceskip) 3.08633 plus 9.0
+......\3.08632 B
+......\3.08632 e
+......\3.08632 c
+......\3.08632 a
+......\3.08632 u
+......\3.08632 s
+......\3.08632 e
+......\glue(\spaceskip) 3.08633 plus 9.0
+......\3.08632 i
+......\3.08632 t
+......\glue(\spaceskip) 3.08633 plus 9.0
+......\3.08632 i
+......\3.08632 s
+......\glue(\spaceskip) 3.08633 plus 9.0
+......\3.08632 a
+......\glue(\spaceskip) 3.08633 plus 9.0
+......\3.08632 t
+......\3.08632 h
+......\3.08632 e
+......\3.08632 r
+......\3.08632 m
+......\3.08632 o
+......\3.08632 s
+......\glue(\spaceskip) 3.08633 plus 9.0
+......\3.08632 b
+......\3.08632 o
+......\3.08632 t
+......\3.08632 t
+......\3.08632 l
+......\3.08632 e
+......\3.08632 ,
+......\glue(\spaceskip) 3.08633 plus 9.0
+......\3.08632 n
+......\3.08632 o
+......\glue(\rightskip) 0.0 plus 3.08635fil
+.....\glue(\baselineskip) 1.05518
+.....\hbox(6.7799+2.16492)x246.0, glue set 0.88214fil
+......\3.08632 h
+......\3.08632 e
+......\3.08632 a
+......\3.08632 t
+......\glue(\spaceskip) 3.08633 plus 9.0
+......\3.08632 c
+......\3.08632 a
+......\3.08632 n
+......\glue(\spaceskip) 3.08633 plus 9.0
+......\3.08632 e
+......\3.08632 n
+......\3.08632 t
+......\3.08632 e
+......\3.08632 r
+......\glue(\spaceskip) 3.08633 plus 9.0
+......\3.08632 o
+......\3.08632 r
+......\glue(\spaceskip) 3.08633 plus 9.0
+......\3.08632 l
+......\3.08632 e
+......\3.08632 a
+......\kern-0.19995
+......\3.08632 v
+......\kern-0.1499
+......\3.08632 e
+......\glue(\spaceskip) 3.08633 plus 9.0
+......\3.08632 t
+......\3.08632 h
+......\3.08632 e
+......\glue(\spaceskip) 3.08633 plus 9.0
+......\3.08632 b
+......\3.08632 o
+......\3.08632 t
+......\3.08632 t
+......\3.08632 l
+......\3.08632 e
+......\3.08632 .
+......\glue(\spaceskip) 3.08633 plus 9.0
+......\3.08632 T
+......\3.08632 h
+......\3.08632 e
+......\glue(\spaceskip) 3.08633 plus 9.0
+......\3.08632 p
+......\3.08632 i
+......\3.08632 s
+......\3.08632 t
+......\3.08632 o
+......\3.08632 n
+......\glue(\spaceskip) 3.08633 plus 9.0
+......\3.08632 i
+......\3.08632 s
+......\glue(\spaceskip) 3.08633 plus 9.0
+......\3.08632 t
+......\3.08632 h
+......\3.08632 e
+......\3.08632 n
+......\glue(\spaceskip) 3.08633 plus 9.0
+......\3.08632 p
+......\3.08632 u
+......\3.08632 s
+......\3.08632 h
+......\3.08632 e
+......\3.08632 d
+......\glue(\rightskip) 0.0 plus 3.08635fil
+.....\glue(\baselineskip) 1.05518
+.....\hbox(6.7799+2.16492)x246.0, glue set 36.19661fil
+......\3.08632 i
+......\3.08632 n
+......\3.08632 ,
+......\glue(\spaceskip) 3.08633 plus 9.0
+......\3.08632 c
+......\3.08632 o
+......\3.08632 m
+......\3.08632 p
+......\3.08632 r
+......\3.08632 e
+......\3.08632 s
+......\3.08632 s
+......\3.08632 i
+......\3.08632 n
+......\3.08632 g
+......\glue(\spaceskip) 3.08633 plus 9.0
+......\3.08632 t
+......\3.08632 h
+......\3.08632 e
+......\glue(\spaceskip) 3.08633 plus 9.0
+......\3.08632 g
+......\kern-0.04994
+......\3.08632 a
+......\3.08632 s
+......\3.08632 .
+......\penalty 10000
+......\glue 0.0 plus 1.0fil
+......\penalty -10000
+......\glue(\rightskip) 0.0 plus 3.08635fil
+.....\glue(\baselineskip) 1.05518
+.....\hbox(6.7799+2.16492)x246.0, glue set 2.42978fil
+......\3.08632 (
+......\3.08632 a
+......\3.08632 )
+......\glue(\spaceskip) 3.08633 plus 9.0
+......\3.08632 D
+......\3.08632 o
+......\3.08632 e
+......\3.08632 s
+......\glue(\spaceskip) 3.08633 plus 9.0
+......\3.08632 t
+......\3.08632 h
+......\3.08632 e
+......\glue(\spaceskip) 3.08633 plus 9.0
+......\3.08632 p
+......\3.08632 r
+......\3.08632 e
+......\3.08632 s
+......\3.08632 s
+......\3.08632 u
+......\3.08632 r
+......\3.08632 e
+......\glue(\spaceskip) 3.08633 plus 9.0
+......\3.08632 o
+......\3.08632 f
+......\glue(\spaceskip) 3.08633 plus 9.0
+......\3.08632 t
+......\3.08632 h
+......\3.08632 e
+......\glue(\spaceskip) 3.08633 plus 9.0
+......\3.08632 g
+......\kern-0.04994
+......\3.08632 a
+......\3.08632 s
+......\glue(\spaceskip) 3.08633 plus 9.0
+......\3.08632 i
+......\3.08632 n
+......\3.08632 c
+......\3.08632 r
+......\3.08632 e
+......\3.08632 a
+......\3.08632 s
+......\3.08632 e
+......\3.08632 ,
+......\glue(\spaceskip) 3.08633 plus 9.0
+......\3.08632 d
+......\3.08632 e
+......\3.08632 c
+......\3.08632 r
+......\3.08632 e
+......\3.08632 a
+......\3.08632 s
+......\3.08632 e
+......\3.08632 ,
+......\glue(\spaceskip) 3.08633 plus 9.0
+......\3.08632 o
+......\3.08632 r
+......\glue(\spaceskip) 3.08633 plus 9.0
+......\3.08632 s
+......\3.08632 t
+......\3.08632 a
+......\3.08632 y
+......\glue(\rightskip) 0.0 plus 3.08635fil
+.....\glue(\baselineskip) 1.05518
+.....\hbox(6.7799+0.09991)x246.0, glue set 50.33936fil
+......\3.08632 t
+......\3.08632 h
+......\3.08632 e
+......\glue(\spaceskip) 3.08633 plus 9.0
+......\3.08632 s
+......\3.08632 a
+......\3.08632 m
+......\3.08632 e
+......\3.08632 ?
+......\penalty 10000
+......\glue 0.0 plus 1.0fil
+......\penalty -10000
+......\glue(\rightskip) 0.0 plus 3.08635fil
+.....\kern -0.09991
+.....\glue 0.0
+.....\glue 0.0
+....\glue 0.0 plus 1.0fil minus 1.0fil
+...\glue 0.0 plus 1.0fil
+...\rule(*+*)x0.0
+...\glue 0.0 plus 1.0fil
+...\hbox(0.0+96.39128)x246.0, shifted -10.0
+....\vbox(0.0+96.39128)x246.0
+.....\rule(0.0+0.0)x*
+.....\glue(\splittopskip) 3.2201
+.....\hbox(6.7799+2.16492)x246.0, glue set 3.7894fil
+......\3.08632 (
+......\3.08632 b
+......\3.08632 )
+......\glue(\spaceskip) 3.08633 plus 9.0
+......\3.08632 D
+......\3.08632 o
+......\3.08632 e
+......\3.08632 s
+......\glue(\spaceskip) 3.08633 plus 9.0
+......\3.08632 t
+......\3.08632 h
+......\3.08632 e
+......\glue(\spaceskip) 3.08633 plus 9.0
+......\3.08632 t
+......\3.08632 e
+......\3.08632 m
+......\3.08632 p
+......\3.08632 e
+......\3.08632 r
+......\3.08632 a
+......\3.08632 t
+......\3.08632 u
+......\3.08632 r
+......\3.08632 e
+......\glue(\spaceskip) 3.08633 plus 9.0
+......\3.08632 o
+......\3.08632 f
+......\glue(\spaceskip) 3.08633 plus 9.0
+......\3.08632 t
+......\3.08632 h
+......\3.08632 e
+......\glue(\spaceskip) 3.08633 plus 9.0
+......\3.08632 g
+......\kern-0.04994
+......\3.08632 a
+......\3.08632 s
+......\glue(\spaceskip) 3.08633 plus 9.0
+......\3.08632 i
+......\3.08632 n
+......\3.08632 c
+......\3.08632 r
+......\3.08632 e
+......\3.08632 a
+......\3.08632 s
+......\3.08632 e
+......\3.08632 ,
+......\glue(\spaceskip) 3.08633 plus 9.0
+......\3.08632 d
+......\3.08632 e
+......\3.08632 c
+......\3.08632 r
+......\3.08632 e
+......\3.08632 a
+......\3.08632 s
+......\3.08632 e
+......\3.08632 ,
+......\glue(\spaceskip) 3.08633 plus 9.0
+......\3.08632 o
+......\3.08632 r
+......\glue(\rightskip) 0.0 plus 3.08635fil
+.....\glue(\baselineskip) 1.05518
+.....\hbox(6.7799+2.16492)x246.0, glue set 45.64175fil
+......\3.08632 s
+......\3.08632 t
+......\3.08632 a
+......\3.08632 y
+......\glue(\spaceskip) 3.08633 plus 9.0
+......\3.08632 t
+......\3.08632 h
+......\3.08632 e
+......\glue(\spaceskip) 3.08633 plus 9.0
+......\3.08632 s
+......\3.08632 a
+......\3.08632 m
+......\3.08632 e
+......\3.08632 ?
+......\penalty 10000
+......\glue 0.0 plus 1.0fil
+......\penalty -10000
+......\glue(\rightskip) 0.0 plus 3.08635fil
+.....\glue(\baselineskip) 1.05518
+.....\hbox(6.7799+2.16492)x246.0, glue set 3.48474fil
+......\3.08632 (
+......\3.08632 c
+......\3.08632 )
+......\glue(\spaceskip) 3.08633 plus 9.0
+......\3.08632 D
+......\3.08632 e
+......\3.08632 s
+......\3.08632 c
+......\3.08632 r
+......\3.08632 i
+......\3.08632 b
+......\3.08632 e
+......\glue(\spaceskip) 3.08633 plus 9.0
+......\3.08632 t
+......\3.08632 h
+......\3.08632 e
+......\glue(\spaceskip) 3.08633 plus 9.0
+......\3.08632 b
+......\3.08632 e
+......\3.08632 h
+......\3.08632 a
+......\kern-0.19995
+......\3.08632 v
+......\3.08632 i
+......\3.08632 o
+......\3.08632 u
+......\3.08632 r
+......\glue(\spaceskip) 3.08633 plus 9.0
+......\3.08632 o
+......\3.08632 f
+......\glue(\spaceskip) 3.08633 plus 9.0
+......\3.08632 t
+......\3.08632 h
+......\3.08632 e
+......\glue(\spaceskip) 3.08633 plus 9.0
+......\3.08632 m
+......\3.08632 o
+......\3.08632 l
+......\3.08632 e
+......\3.08632 c
+......\3.08632 u
+......\3.08632 l
+......\3.08632 e
+......\3.08632 s
+......\glue(\spaceskip) 3.08633 plus 9.0
+......\3.08632 o
+......\3.08632 f
+......\glue(\spaceskip) 3.08633 plus 9.0
+......\3.08632 g
+......\kern-0.04994
+......\3.08632 a
+......\3.08632 s
+......\glue(\spaceskip) 3.08633 plus 9.0
+......\3.08632 d
+......\3.08632 u
+......\3.08632 r
+......\3.08632 i
+......\3.08632 n
+......\3.08632 g
+......\glue(\rightskip) 0.0 plus 3.08635fil
+.....\glue(\baselineskip) 1.05518
+.....\hbox(6.7799+2.16492)x246.0, glue set 5.02046fil
+......\3.08632 t
+......\3.08632 h
+......\3.08632 e
+......\glue(\spaceskip) 3.08633 plus 9.0
+......\3.08632 c
+......\3.08632 o
+......\3.08632 m
+......\3.08632 p
+......\3.08632 r
+......\3.08632 e
+......\3.08632 s
+......\3.08632 s
+......\3.08632 i
+......\3.08632 o
+......\3.08632 n
+......\glue(\spaceskip) 3.08633 plus 9.0
+......\3.08632 a
+......\3.08632 n
+......\3.08632 d
+......\glue(\spaceskip) 3.08633 plus 9.0
+......\3.08632 s
+......\3.08632 u
+......\3.08632 p
+......\3.08632 p
+......\3.08632 o
+......\3.08632 r
+......\3.08632 t
+......\glue(\spaceskip) 3.08633 plus 9.0
+......\3.08632 y
+......\3.08632 o
+......\3.08632 u
+......\3.08632 r
+......\glue(\spaceskip) 3.08633 plus 9.0
+......\3.08632 a
+......\3.08632 n
+......\3.08632 s
+......\3.08632 w
+......\3.08632 e
+......\3.08632 r
+......\3.08632 s
+......\glue(\spaceskip) 3.08633 plus 9.0
+......\3.08632 t
+......\3.08632 o
+......\glue(\spaceskip) 3.08633 plus 9.0
+......\3.08632 (
+......\3.08632 a
+......\3.08632 )
+......\glue(\spaceskip) 3.08633 plus 9.0
+......\3.08632 a
+......\3.08632 n
+......\3.08632 d
+......\glue(\spaceskip) 3.08633 plus 9.0
+......\3.08632 (
+......\3.08632 b
+......\3.08632 )
+......\glue(\rightskip) 0.0 plus 3.08635fil
+.....\glue(\baselineskip) 1.05518
+.....\hbox(6.7799+2.16492)x246.0, glue set 12.79074fil
+......\3.08632 w
+......\3.08632 i
+......\3.08632 t
+......\3.08632 h
+......\glue(\spaceskip) 3.08633 plus 9.0
+......\3.08632 a
+......\3.08632 n
+......\glue(\spaceskip) 3.08633 plus 9.0
+......\3.08632 e
+......\kern-0.1499
+......\3.08632 x
+......\3.08632 p
+......\3.08632 l
+......\3.08632 a
+......\3.08632 n
+......\3.08632 a
+......\3.08632 t
+......\3.08632 i
+......\3.08632 o
+......\3.08632 n
+......\glue(\spaceskip) 3.08633 plus 9.0
+......\3.08632 i
+......\3.08632 n
+......\glue(\spaceskip) 3.08633 plus 9.0
+......\3.08632 t
+......\3.08632 e
+......\3.08632 r
+......\3.08632 m
+......\3.08632 s
+......\glue(\spaceskip) 3.08633 plus 9.0
+......\3.08632 o
+......\3.08632 f
+......\glue(\spaceskip) 3.08633 plus 9.0
+......\3.08632 t
+......\3.08632 h
+......\3.08632 e
+......\3.08632 i
+......\3.08632 r
+......\glue(\spaceskip) 3.08633 plus 9.0
+......\3.08632 b
+......\3.08632 e
+......\3.08632 h
+......\3.08632 a
+......\kern-0.19995
+......\3.08632 v
+......\3.08632 i
+......\3.08632 o
+......\3.08632 u
+......\3.08632 r
+......\kern-0.54993
+......\3.08632 .
+......\penalty 10000
+......\glue 0.0 plus 1.0fil
+......\penalty -10000
+......\glue(\rightskip) 0.0 plus 3.08635fil
+.....\glue(\baselineskip) 1.05518
+.....\hbox(6.7799+2.16492)x246.0, glue set 4.14276fil
+......\3.08632 (
+......\3.08632 d
+......\3.08632 )
+......\glue(\spaceskip) 3.08633 plus 9.0
+......\3.08632 A
+......\3.08632 r
+......\3.08632 e
+......\glue(\spaceskip) 3.08633 plus 9.0
+......\3.08632 t
+......\3.08632 h
 ......\3.08632 e
 ......\3.08632 r
 ......\3.08632 e
+......\glue(\spaceskip) 3.08633 plus 9.0
+......\3.08632 a
 ......\3.08632 n
-......\3.08632 c
+......\glue(\spaceskip) 3.08633 plus 9.0
+......\3.08632 o
+......\3.08632 t
+......\3.08632 h
+......\3.08632 e
+......\3.08632 r
+......\glue(\spaceskip) 3.08633 plus 9.0
+......\3.08632 p
+......\3.08632 r
+......\3.08632 o
+......\3.08632 p
+......\3.08632 e
+......\3.08632 r
+......\3.08632 t
+......\3.08632 i
+......\3.08632 e
+......\3.08632 s
+......\glue(\spaceskip) 3.08633 plus 9.0
+......\3.08632 o
+......\3.08632 f
+......\glue(\spaceskip) 3.08633 plus 9.0
+......\3.08632 t
+......\3.08632 h
 ......\3.08632 e
 ......\glue(\spaceskip) 3.08633 plus 9.0
-......\3.08632 2
+......\3.08632 g
+......\kern-0.04994
+......\3.08632 a
+......\3.08632 s
+......\glue(\spaceskip) 3.08633 plus 9.0
+......\3.08632 t
+......\3.08632 h
+......\3.08632 a
+......\3.08632 t
+......\glue(\spaceskip) 3.08633 plus 9.0
+......\3.08632 c
+......\3.08632 h
+......\3.08632 a
+......\3.08632 n
+......\3.08632 g
+......\3.08632 e
+......\3.08632 ?
 ......\penalty 10000
-......\glue(\parfillskip) 0.0 plus 1.0fil
+......\glue 0.0 plus 1.0fil
+......\penalty -10000
 ......\glue(\rightskip) 0.0 plus 3.08635fil
-.....\penalty -51
-.....\glue 10.0 plus 3.0 minus 5.0
+.....\penalty 150
+.....\glue(\baselineskip) 7.83508
+.....\hbox(0.0+0.0)x246.0, glue set 79.70581fil
+......\glue(\rightskip) 0.0 plus 3.08635fil
 .....\glue 0.0 plus 1.0fil
 .....\glue 0.0
 .....\glue 0.0
@@ -5949,7 +7354,7 @@ mark \ETC.}
 .....\mark{}
 .....\write-{}
 .....\glue(\topskip) 3.2201
-.....\hbox(6.7799+2.16492)x246.0, glue set 28.22704fil
+.....\hbox(6.7799+2.16492)x246.0, glue set 41.42519fil
 ......\glue(\leftskip) 0.0 plus 1.0fil
 ......\hbox(0.0+0.0)x0.0
 ......\glue 0.0
@@ -5972,75 +7377,17 @@ mark \ETC.}
 ......\3.08632 A
 ......\3.08632 :
 ......\glue(\spaceskip) 3.08633 plus 9.0
-......\3.08632 N
-......\3.08632 a
-......\3.08632 m
-......\3.08632 e
-......\glue(\spaceskip) 3.08633 plus 9.0
+......\3.08632 C
 ......\3.08632 o
-......\3.08632 f
-......\glue(\spaceskip) 3.08633 plus 9.0
-......\3.08632 a
-......\3.08632 p
-......\3.08632 p
-......\3.08632 e
-......\3.08632 n
 ......\3.08632 d
-......\3.08632 i
-......\3.08632 x
+......\3.08632 e
 ......\penalty 10000
 ......\glue(\parfillskip) 0.0
 ......\glue(\rightskip) 0.0 plus 3.08635fil
 .....\write-{}
 .....\penalty 10000
 .....\glue 14.22636
-.....\glue(\parskip) 0.0 plus 1.0
-.....\glue(\parskip) 0.0
-.....\glue(\baselineskip) 1.05518
-.....\hbox(6.7799+2.16492)x246.0, glue set 19.50076fil
-......\hbox(0.0+0.0)x10.0
-......\3.08632 T
-......\3.08632 h
-......\3.08632 i
-......\3.08632 s
-......\glue(\spaceskip) 3.08633 plus 9.0
-......\3.08632 w
-......\3.08632 i
-......\3.08632 l
-......\3.08632 l
-......\glue(\spaceskip) 3.08633 plus 9.0
-......\3.08632 b
-......\3.08632 e
-......\glue(\spaceskip) 3.08633 plus 9.0
-......\3.08632 t
-......\3.08632 h
-......\3.08632 e
-......\glue(\spaceskip) 3.08633 plus 9.0
-......\3.08632 b
-......\3.08632 o
-......\3.08632 d
-......\3.08632 y
-......\glue(\spaceskip) 3.08633 plus 9.0
-......\3.08632 o
-......\3.08632 f
-......\glue(\spaceskip) 3.08633 plus 9.0
-......\3.08632 t
-......\3.08632 h
-......\3.08632 e
-......\glue(\spaceskip) 3.08633 plus 9.0
-......\3.08632 a
-......\3.08632 p
-......\3.08632 p
-......\3.08632 e
-......\3.08632 n
-......\3.08632 d
-......\3.08632 i
-......\3.08632 x
-......\3.08632 .
-......\penalty 10000
-......\glue(\parfillskip) 0.0 plus 1.0fil
-......\glue(\rightskip) 0.0 plus 3.08635fil
-.....\glue -2.16492
+.....\glue 0.0
 .....\kern 0.0
 .....\glue 0.0
 .....\glue 0.0
@@ -6262,7 +7609,7 @@ dfmark \ETC.}
  ) ) 
 Here is how much of TeX's memory you used:
  24730 strings out of 478269
- 443857 string characters out of 5846373
+ 443861 string characters out of 5846373
  934225 words of memory out of 5000000
  42551 multiletter control sequences out of 15000+600000
  471672 words of font info for 30 fonts, out of 8000000 for 9000
