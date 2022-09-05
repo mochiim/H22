@@ -1,12 +1,12 @@
 # Fdb version 3
-["bibtex oblig1"] 1662403814 "oblig1.aux" "oblig1.bbl" "oblig1" 1662405231
+["bibtex oblig1"] 1662403814 "oblig1.aux" "oblig1.bbl" "oblig1" 1662405419
   "/usr/local/texlive/2022/texmf-dist/bibtex/bst/revtex/apsrev4-2.bst" 1601932770 69609 e9dea59f0e753ccda3ddc8f5806d846d ""
-  "oblig1.aux" 1662404474 3396 c2714438950280cfa2f385d78c759774 "pdflatex"
-  "oblig1Notes.bib" 1662404474 303 c6c3e81779e69ac0b8ef6ead70a5b6f3 "pdflatex"
+  "oblig1.aux" 1662405233 3396 c2714438950280cfa2f385d78c759774 "pdflatex"
+  "oblig1Notes.bib" 1662405233 303 c6c3e81779e69ac0b8ef6ead70a5b6f3 "pdflatex"
   (generated)
   "oblig1.bbl"
   "oblig1.blg"
-["pdflatex"] 1662405231 "oblig1.tex" "oblig1.pdf" "oblig1" 1662405231
+["pdflatex"] 1662405419 "oblig1.tex" "oblig1.pdf" "oblig1" 1662405419
   "/Users/rebeccanguyen/Documents/GitHub/H22/T_mot_cv.png" 1662321155 24226 215de770ae0dd8380a2dbf4ed54fd535 ""
   "/Users/rebeccanguyen/Documents/GitHub/H22/setup.png" 1662294590 691396 2a9cf4081a235996b0c63c3eefbf4bb4 ""
   "/Users/rebeccanguyen/Documents/GitHub/H22/tau_b.png" 1662226651 33363 b359c641ddb04b6cfa9064796f2520ca ""
@@ -179,10 +179,10 @@
   "/usr/local/texlive/2022/texmf-var/fonts/map/pdftex/updmap/pdftex.map" 1647878959 4410336 7d30a02e9fa9a16d7d1f8d037ba69641 ""
   "/usr/local/texlive/2022/texmf-var/web2c/pdftex/pdflatex.fmt" 1661429667 2826436 7c64879f9fd58527ca5194811b2cec0b ""
   "/usr/local/texlive/2022/texmf.cnf" 1647878952 577 209b46be99c9075fd74d4c0369380e8c ""
-  "oblig1.aux" 1662404474 3396 c2714438950280cfa2f385d78c759774 "pdflatex"
+  "oblig1.aux" 1662405233 3396 c2714438950280cfa2f385d78c759774 "pdflatex"
   "oblig1.bbl" 1662403815 2236 650bddc8363de7c212746a4fc710a744 "bibtex oblig1"
-  "oblig1.out" 1662404474 993 03945865f34294bc7cbccec0e66e2ead "pdflatex"
-  "oblig1.tex" 1662405231 14082 b1210f27c008215f14f6790255e9ebfe ""
+  "oblig1.out" 1662405233 993 03945865f34294bc7cbccec0e66e2ead "pdflatex"
+  "oblig1.tex" 1662405419 14088 70c5f628568952b1c4775af8694bfe64 ""
   (generated)
   "oblig1.aux"
   "oblig1.log"
