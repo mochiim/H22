@@ -149,10 +149,11 @@ Our attempt of model fitting the temperature gradient using linear regression, i
   \includegraphics[scale=0.5]{T_mot_cv.png}
   \caption{Temperature against heat capacity for an Einstein solid}\label{fig: tagainstcv}
 \end{figure}
-When modelling the heat capacity related to temperature (for an Einstein solid)
+When modelling the heat capacity related to temperature (for an Einstein solid) we discover one important attribute. As the temperature increases it becomes harder to heat up the material. This prevents the material from absorbing all the heat from the beverage. The system rather creates thermal equilibrium between the material and beverage. This attribute allows the material to only extract excess heat and occasionally re-introduce it back into the beverage. This happens as long as there is heat stored in the material.
 
 \section{Discussion and conclusion}
-Einstein solid can be used to model
+Einstein solid can be used to model the Temperfect mug. The model describe how the material in the mug absorbs and stores heat in its wall. As well as explain the thermal equilibrium between the beverage and material as temperature increases. In conclusion the model describe the mug as advertised.
+However, I am not sure it the model is sufficient. In my algorithm I have only considered the case of 'high-temperature' so I am not able to describe the solid for lower temperature. My algorithm seems to also have an error regarding the values on the axis of figure (\ref{fig: tagainstcv}), which does not make physical sense. The graph itself does physical sense.
 
 \newpage
 %% if you want to include an appendix, this is how you do it
@@ -163,12 +164,34 @@ bottle, no heat can enter or leave the bottle. The
 piston is then pushed in, compressing the gas. \\
 (a) Does the pressure of the gas increase, decrease,
 or stay the same?\\
+As the piston push down, the pressure increases. That is because we decrease the volume where the gas molecules take place.\\
 (b) Does the temperature of the gas increase, decrease, or stay the same?\\
+As the pressure increases, the temperature also increases. Not sure if we assume an ideal gas, but I believe the reasoning is the same for all gases. For now we will look at ideal gas law: $PV = nkT$. As we can observe, increasing pressure result in higher value on the left-hand side of the equation. This result in a higher value on the right-hand side as well.\\
 (c) Describe the behaviour of the molecules of gas
 during the compression and support your answers to (a) and (b) with an explanation in
 terms of their behaviour. \\
+There is an increase in kinetic energy of the molecules as a consequence of increased pressure and temperature.\\
 (d) Are there an other properties of the gas that
 change?\\
+Change of entropy of the gas.\\
+
+2. Consider the same system except now the bottle
+allows heat to go in or out of the bottle. The piston
+is moved slowly, and the temperature of the gas is
+maintained constant.\\
+(a) In terms of what is happening to the
+molecules, how is this situation different from
+the situation in the first question?\\
+As there is no increase in temperature and some gas escape, the molecules will not be having an increase in kinetic energy in this situation.
+(b) Does the pressure of the gas increase, decrease,
+or stay the same?\\
+The pressure stay the same since some of the gas escape as the piston moves slowly and there is no increase in temperature.
+(c) Support your answer to (b) with an explanation in terms of what is happening to the
+molecules of gas.\\
+Some gas escape, meaning some molecules escape. The temperature and pressure does not increase and the motion of molecules remains the same.
+(d) Are there any other properties of the gas that
+change?\\
+No change in entropy.
 
 
 \section{Code}
