@@ -59,7 +59,7 @@ nstep = 15*N
 tau = N
 Tt = np.zeros(nstep)
 Tb = np.zeros(nstep)
-Tt[0] = 1iii
+Tt[0] = 1
 Tb[0] = -1
 Tr = -1
 
