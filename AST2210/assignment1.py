@@ -48,9 +48,8 @@ slice_y = slice(y1,y2)
 idata_cut = idata[slice_y, slice_x, :]
 
 # intensity plot
-
 plt.rcParams["image.origin"] = "lower"
-plt.rcParams["image.cmap"] = "viridis"
+plt.rcParams["image.cmap"] = "hot"
 
 fig, ax = plt.subplots()
 ax.grid(False)
@@ -62,7 +61,7 @@ ax.set_xlabel("x [idx]", fontsize = 18)
 ax.set_ylabel("y [idy]", fontsize = 18)
 ax.add_patch(rect) # sub field of view
 fig.tight_layout()
-plt.savefig("intensitysub.png")
+#plt.savefig("intensitysub.png")
 plt.show()
 
 def specline(wavelength_spectrum, name):
