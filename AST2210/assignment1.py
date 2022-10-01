@@ -75,26 +75,15 @@ def inplot():
 #inplot()
 
 # creating subplot figure
-#fig, ax = plt.subplots(2, 2)
-#fig.tight_layout()
 def specline(wavelength_spectrum, name, i, j):
     """
     Creating plot of spectral line from a wavelength spectrum
     """
-    ax[i, j].plot(wavelength_spectrum, ls = "--", lw = 1, color = "red", marker = "x", label = "intensity observed as a function of wavelength")
-    ax[i, j].set_title(f"Spectra for point {name}", fontsize = 18)
-    ax[i, j].set_xlabel(r"Wavelength $\lambda_i$", fontsize = 18)
-    ax[i, j].set_ylabel("Intensity", fontsize = 18)
+    ax1[i, j].plot(wavelength_spectrum, ls = "--", lw = 1, color = "red", marker = "x", label = "intensity observed as a function of wavelength")
+    ax1[i, j].set_title(f"Spectra for point {name}", fontsize = 18)
+    ax1[i, j].set_xlabel(r"Wavelength $\lambda_i$", fontsize = 18)
+    ax1[i, j].set_ylabel("Intensity", fontsize = 18)
     #ax[i, j].legend(prop={'size': 12})
-
-# plotting spectral line of 4 points in a sub plot
-#specline(wavspec(A), "A", 0, 0)
-#specline(wavspec(B), "B", 0, 1)
-#specline(wavspec(C), "C", 1, 0)
-#specline(wavspec(D), "D", 1, 1)
-
-#plt.savefig("spectrallines.png")
-#plt.show()
 
 #plt.plot(np.mean(idata, axis = (0, 1)))
 #plt.show()
@@ -109,19 +98,35 @@ def gaussian(x, d, a, b, c):
     """
     return d + a * np.exp(-(x - b)**2 / (2 * c**2))
 
-x = np.linspace(0, 7, 8)
-y = wavspec(C)
-mean = sum(x * y) / sum(y)
-sigma = sigma = np.sqrt(sum(y * (x - mean)**2) / sum(y))
-popt, pcov = curve_fit(gaussian, x, y)
-plt.plot(x, gaussian(x, *popt), 'r-')
-plt.plot(y, label = "data")
+def fitting(spectraline, name, i, j):
+    """
+    """
+    x = np.linspace(0, 7, 8)
+    y = spectraline
+    mean = sum(x * y) / sum(y)
+    sigma = np.sqrt(sum(y * (x - mean)**2) / sum(y))
+    popt, pcov = curve_fit(gaussian, x, y, p0 =[y[0], max(y), mean, sigma])
+    ax1[i, j].plot(x, gaussian(x, *popt), color = "blue", label = "Fit")
+    #plt.plot(y, ls = "--", lw = 1, color = "red", marker = "x")
+    ax1[i, j].set_title(f"Fitting for spectra {name}", fontsize = 18)
+    ax1[i, j].set_xlabel(r"Wavelength $\lambda_i$", fontsize = 18)
+    ax1[i, j].set_ylabel("Intensity", fontsize = 18)
 
 
-"""
-popt, pcov = curve_fit(Gauss, x, y, p0=[-2000, max(y), mean, sigma])
-plt.plot(y, ls = "--", lw = 1, color = "red", marker = "x")
-plt.plot(x, Gauss(x, *popt), 'r-', color = "blue", label='fit')
-"""
-plt.legend()
+# plotting spectral lines and their gaussian fitting of 4 points in a sub plot
+
+fig1, ax1 = plt.subplots(2, 2)
+fig1.tight_layout()
+specline(wavspec(A), "A", 0, 0)
+fitting(wavspec(A), "A", 0, 0)
+
+specline(wavspec(B), "B", 0, 1)
+fitting(wavspec(B), "B", 0, 1)
+
+specline(wavspec(C), "C", 1, 0)
+fitting(wavspec(C), "C", 1, 0)
+
+specline(wavspec(D), "D", 1, 1)
+fitting(wavspec(D), "D", 1, 1)
+plt.savefig("spectrallinesfit.png")
 plt.show()
