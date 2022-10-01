@@ -2,7 +2,12 @@ import numpy as np
 import matplotlib.pyplot as plt
 from matplotlib.patches import Rectangle
 from scipy.interpolate import interp1d
+from scipy.optimize import curve_fit
 import os
+import seaborn as sns
+sns.color_palette("bright")
+sns.set_theme()
+sns.set_style("darkgrid")
 
 # spectral data observed as a function of wavelength for a rectangular region
 idata = np.load("/Users/rebeccanguyen/Documents/GitHub/H22/idata_square.npy")
@@ -47,38 +52,76 @@ slice_x = slice(x1,x2)
 slice_y = slice(y1,y2)
 idata_cut = idata[slice_y, slice_x, :]
 
-# intensity plot
-plt.rcParams["image.origin"] = "lower"
-plt.rcParams["image.cmap"] = "hot"
+def inplot():
+    """
+    intensity plot
+    """
+    plt.rcParams["image.origin"] = "lower"
+    plt.rcParams["image.cmap"] = "hot"
 
-fig, ax = plt.subplots()
-ax.grid(False)
-im = ax.imshow(intensity_data)
-cbar = fig.colorbar(im)
-cbar.ax.set_ylabel(r"Intensity", fontsize = 18)
-ax.set_title("Intensity", fontsize = 18)
-ax.set_xlabel("x [idx]", fontsize = 18)
-ax.set_ylabel("y [idy]", fontsize = 18)
-ax.add_patch(rect) # sub field of view
-fig.tight_layout()
-#plt.savefig("intensitysub.png")
-plt.show()
+    fig, ax = plt.subplots()
+    ax.grid(False)
+    im = ax.imshow(intensity_data)
+    cbar = fig.colorbar(im)
+    cbar.ax.set_ylabel(r"Intensity", fontsize = 18)
+    ax.set_title("Intensity", fontsize = 18)
+    ax.set_xlabel("x [idx]", fontsize = 18)
+    ax.set_ylabel("y [idy]", fontsize = 18)
+    ax.add_patch(rect) # sub field of view
+    fig.tight_layout()
+    #plt.savefig("intensity.png")
+    plt.show()
 
-def specline(wavelength_spectrum, name):
+#inplot()
+
+# creating subplot figure
+#fig, ax = plt.subplots(2, 2)
+#fig.tight_layout()
+def specline(wavelength_spectrum, name, i, j):
     """
     Creating plot of spectral line from a wavelength spectrum
     """
-    fig, ax = plt.subplots()
-    ax.plot(wavelength_spectrum, ls = "--", lw = 1, color = "red", marker = "x", label = "intensity observed as a function of wavelength")
-    ax.set_title(f"Spectra for point {name}", fontsize = 18)
-    ax.set_xlabel(r"Wavelength $\lambda_i$", fontsize = 18)
-    ax.set_ylabel("Intensity", fontsize = 18)
-    ax.legend(prop={'size': 12})
-    fig.tight_layout()
-    #plt.savefig(f"spectra{name}.png")
-    plt.show()
+    ax[i, j].plot(wavelength_spectrum, ls = "--", lw = 1, color = "red", marker = "x", label = "intensity observed as a function of wavelength")
+    ax[i, j].set_title(f"Spectra for point {name}", fontsize = 18)
+    ax[i, j].set_xlabel(r"Wavelength $\lambda_i$", fontsize = 18)
+    ax[i, j].set_ylabel("Intensity", fontsize = 18)
+    #ax[i, j].legend(prop={'size': 12})
 
-specline(wavspec(A), "A")
-specline(wavspec(B), "B")
-specline(wavspec(C), "C")
-specline(wavspec(D), "D")
+# plotting spectral line of 4 points in a sub plot
+#specline(wavspec(A), "A", 0, 0)
+#specline(wavspec(B), "B", 0, 1)
+#specline(wavspec(C), "C", 1, 0)
+#specline(wavspec(D), "D", 1, 1)
+
+#plt.savefig("spectrallines.png")
+#plt.show()
+
+#plt.plot(np.mean(idata, axis = (0, 1)))
+#plt.show()
+
+def gaussian(x, d, a, b, c):
+    """
+    Gaussian fitting of emission and absorption lines
+    a: the amplitude of the gaussian.
+    b: the mean of the gaussian. The position of the peak on the x-axis.
+    c: the standard deviation.
+    d: the constant term, y-value of the baseline.
+    """
+    return d + a * np.exp(-(x - b)**2 / (2 * c**2))
+
+x = np.linspace(0, 7, 8)
+y = wavspec(C)
+mean = sum(x * y) / sum(y)
+sigma = sigma = np.sqrt(sum(y * (x - mean)**2) / sum(y))
+popt, pcov = curve_fit(gaussian, x, y)
+plt.plot(x, gaussian(x, *popt), 'r-')
+plt.plot(y, label = "data")
+
+
+"""
+popt, pcov = curve_fit(Gauss, x, y, p0=[-2000, max(y), mean, sigma])
+plt.plot(y, ls = "--", lw = 1, color = "red", marker = "x")
+plt.plot(x, Gauss(x, *popt), 'r-', color = "blue", label='fit')
+"""
+plt.legend()
+plt.show()
