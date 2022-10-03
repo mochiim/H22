@@ -1,17 +1,41 @@
+from __future__ import print_function
+import numpy as np
 import matplotlib.pyplot as plt
 from scipy.optimize import curve_fit
-import numpy as np
 
-def func(x, a, b, c):
-    return a * np.exp(-b * x) + c
 
-xdata = np.linspace(0, 4, 50)
-y = func(xdata, 2.5, 1.3, 0.5)
-rng = np.random.default_rng()
-y_noise = 0.2 * rng.normal(size=xdata.size)
-ydata = y + y_noise
-plt.plot(xdata, ydata, 'b-', label='data')
+def gauss(x, H, A, x0, sigma):
+    return H + A * np.exp(-(x - x0) ** 2 / (2 * sigma ** 2))
 
-popt, pcov = curve_fit(func, xdata, ydata)
-plt.plot(xdata, func(xdata, *popt), 'r-', label='fit: a=%5.3f, b=%5.3f, c=%5.3f' % tuple(popt))
+def gauss_fit(x, y):
+    mean = sum(x * y) / sum(y)
+    sigma = np.sqrt(sum(y * (x - mean) ** 2) / sum(y))
+    popt, pcov = curve_fit(gauss, x, y, p0=[min(y), max(y), mean, sigma])
+    return popt
+
+
+# generate simulated data
+np.random.seed(123)  # comment out if you want different data each time
+xdata = np.linspace(3, 10, 100)
+ydata_perfect = gauss(xdata, 20, 5, 6, 1)
+ydata = np.random.normal(ydata_perfect, 1, 100)
+
+H, A, x0, sigma = gauss_fit(xdata, ydata)
+FWHM = 2.35482 * sigma
+
+print('The offset of the gaussian baseline is', H)
+print('The center of the gaussian fit is', x0)
+print('The sigma of the gaussian fit is', sigma)
+print('The maximum intensity of the gaussian fit is', H + A)
+print('The Amplitude of the gaussian fit is', A)
+print('The FWHM of the gaussian fit is', FWHM)
+
+plt.plot(xdata, ydata, 'ko', label='data')
+plt.plot(xdata, ydata_perfect, '-k', label='data (without_noise)')
+plt.plot(xdata, gauss(xdata, *gauss_fit(xdata, ydata)), '--r', label='fit')
+
+plt.legend()
+plt.title('Gaussian fit,  $f(x) = A e^{(-(x-x_0)^2/(2sigma^2))}$')
+plt.xlabel('Motor position')
+plt.ylabel('Intensity (A)')
 plt.show()
