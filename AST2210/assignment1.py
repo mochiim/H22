@@ -3,6 +3,7 @@ import matplotlib.pyplot as plt
 from matplotlib.patches import Rectangle
 from scipy.interpolate import interp1d
 from scipy.optimize import curve_fit
+import scipy.constants as sc
 import os
 import seaborn as sns
 sns.color_palette("bright")
@@ -26,7 +27,7 @@ def wavspec(nested_coor):
     """
     x = nested_coor[0]
     y = nested_coor[1]
-    wavelength_spectrum = idata[y - 1, x - 1,:]
+    wavelength_spectrum = idata[y - 1, x - 1, :]
     return wavelength_spectrum
 
 # We will look at the spectra at some specific pixel locations
@@ -84,6 +85,8 @@ plt.legend()
 
 # sub field of view
 """
+plt.rcParams["image.origin"] = "lower"
+plt.rcParams["image.cmap"] = "hot"
 fig, ax = plt.subplots()
 ax.grid(False)
 im = ax.imshow(idata_cut)
@@ -92,14 +95,15 @@ cbar.ax.set_ylabel(r"Intensity", fontsize = 18)
 ax.set_title("Intensity in sub field of view", fontsize = 18)
 ax.set_xlabel("x [idx]", fontsize = 18)
 ax.set_ylabel("y [idy]", fontsize = 18)
-ax.add_patch(rect) # sub field of view
 fig.tight_layout()
+plt.savefig("subfieldofview.png")
 plt.show()
 """
 
+# average spectra
 avg = np.mean(idata, axis = (0, 1)) # average spectra
 
-def gaussian(x, d, a, b, c):
+def gaussian(x, d, a, b, c):#d, a, b, c):
     """
     Gaussian fitting of emission and absorption lines
     a: the amplitude of the gaussian.
@@ -116,16 +120,32 @@ def fitting(y):
     x = np.linspace(0, 7, 8)
     mean = sum(x * y) / sum(y)
     sigma = np.sqrt(sum(y * (x - mean)**2) / sum(y))
-    popt, pcov = curve_fit(gaussian, x, y, p0 = [min(y), max(y), sigma, 2])
+    inex = np.arange(len(spect_pos))
+    mean = inex[y.argmin()]
+    b = spect_pos[mean]
+    popt, pcov = curve_fit(gaussian, x, y, (np.min(y) - np.max(y), np.max(y), sigma, 2))
+    #popt, pcov = curve_fit(gaussian, x, y, (min(y) max(y), max(y), sigma, 2))
     x = np.linspace(0, 7, 1000)
     return x, popt
+
+def doppler(y):
+    """
+    Returns the doppler velocity.
+    (The wavelength window is centred around Fe I, 6173 Ångstrom [Å])
+
+    y: spectra line to be fitted with a gaussian curve
+    """
+    x, popt = fitting(y)
+    lambdaobs = popt[1]
+    v  = ((lambdaobs - 6173)/6173)*sc.c
+    return v
 
 # plotting spectral lines and their gaussian fitting of 4 points in a sub plot
 """
 fig, ax = plt.subplots(2, 2)
 x = np.linspace(0, 7, 1000)
 
-poptA = fitting(wavspec(A))
+x, poptA = fitting(wavspec(A))
 ax[0, 0].plot(wavspec(A), ls = "--", lw = 1, color = "red", marker = "x", label = "Data")
 ax[0, 0].plot(x, gaussian(x, *poptA), color = "blue", label = "Gaussian fitting")
 ax[0, 0].set_title(f"Fitting for spectra A", fontsize = 20)
@@ -133,7 +153,7 @@ ax[0, 0].set_xlabel(r"Wavelength $\lambda_i$", fontsize = 20)
 ax[0, 0].set_ylabel("Intensity", fontsize = 20)
 ax[0, 0].legend(prop={'size': 12})
 
-poptB = fitting(wavspec(B))
+x, poptB = fitting(wavspec(B))
 ax[0, 1].plot(wavspec(B), ls = "--", lw = 1, color = "red", marker = "x", label = "Data")
 ax[0, 1].plot(x, gaussian(x, *poptB), color = "blue", label = "Gaussian fitting")
 ax[0, 1].set_title(f"Fitting for spectra B", fontsize = 20)
@@ -141,7 +161,7 @@ ax[0, 1].set_xlabel(r"Wavelength $\lambda_i$", fontsize = 20)
 ax[0, 1].set_ylabel("Intensity", fontsize = 20)
 ax[0, 1].legend(prop={'size': 12})
 
-poptC = fitting(wavspec(C))
+x, poptC = fitting(wavspec(C))
 ax[1, 0].plot(wavspec(C), ls = "--", lw = 1, color = "red", marker = "x", label = "Data")
 ax[1, 0].plot(x, gaussian(x, *poptC), color = "blue", label = "Gaussian fitting")
 ax[1, 0].set_title(f"Fitting for spectra C", fontsize = 20)
@@ -149,7 +169,7 @@ ax[1, 0].set_xlabel(r"Wavelength $\lambda_i$", fontsize = 20)
 ax[1, 0].set_ylabel("Intensity", fontsize = 20)
 ax[1, 0].legend(prop={'size': 12})
 
-poptD = fitting(wavspec(D))
+x, poptD = fitting(wavspec(D))
 ax[1, 1].plot(wavspec(D), ls = "--", lw = 1, color = "red", marker = "x", label = "Data")
 ax[1, 1].plot(x, gaussian(x, *poptD), color = "blue", label = "Gaussian fitting")
 ax[1, 1].set_title(f"Fitting for spectra D", fontsize = 20)
@@ -162,7 +182,40 @@ plt.show()
 
 
 """
+
+"""
 x, popt = fitting(avg)
+plt.title(f"Average spectra over the whole region", fontsize = 20)
+plt.xlabel(r"Wavelength $\lambda_i$", fontsize = 20)
+plt.ylabel("Intensity", fontsize = 20)
 plt.plot(x, gaussian(x, *popt), color = "blue", label = "Gaussian fitting")
-plt.plot(avg, ls = "--", lw = 1, color = "red", marker = "x")
+plt.plot(avg, ls = "--", lw = 1, color = "red", marker = "x", label = "Data")
+plt.legend(prop={'size': 12})
+#plt.savefig("avg.png")
+plt.show()
+"""
+"""
+
+plt.plot(avg)
+plt.title(f"Average spectra over the whole region", fontsize = 20)
+plt.xlabel(r"Wavelength $\lambda_i$", fontsize = 20)
+plt.ylabel("Intensity", fontsize = 20)
+plt.show()
+"""
+
+def gauss(x, H, A, x0, sigma):
+    return H + A * np.exp(-(x - x0) ** 2 / (2 * sigma ** 2))
+
+def gauss_fit(x, y):
+    mean = sum(x * y) / sum(y)
+    sigma = np.sqrt(sum(y * (x - mean) ** 2) / sum(y))
+    inex = np.arange(len(spect_pos))
+    mean = inex[y.argmin()]
+    b = spect_pos[mean]
+    popt, pcov = curve_fit(gauss, x, y, p0=[min(y), max(y), sigma, mean])
+    return x, popt
+
+x, popt = gauss_fit(np.linspace(0, 7, 8), wavspec(A))
+plt.plot(wavspec(A))
+plt.plot(x, gaussian(x, *popt), color = "blue", label = "Gaussian fitting")
 plt.show()
