@@ -1,9 +1,5 @@
 import numpy as np
 import matplotlib.pyplot as plt
-from ast2000tools.solar_system import SolarSystem
-import ast2000tools.constants as const
-seed = 36302
-system = SolarSystem(seed)
 
 def epotlist(r,Q,R):
     """
@@ -35,8 +31,8 @@ xx, yy = np.meshgrid(x, y)
 
 R = [] # list for positions
 Q = [] # list of charges
-r1 = np.array([0, -0.000001]); q1 = 1000
-r2 = np.array([0, 0.000001]); q2 = -1000
+r1 = np.array([-0.000001, 0]); q1 = 1000
+r2 = np.array([0.000001, 0]); q2 = -1000
 R.append(r1); Q.append(q1)
 R.append(r2); Q.append(q2)
 
@@ -56,3 +52,21 @@ magnetic = ax.contourf(xx, yy, V, 200, cmap = "hot")
 ax.set_aspect("equal")
 fig.colorbar(magnetic)
 plt.show()
+
+######
+
+def gauss(x, H, A, x0, sigma):
+    return H + A * np.exp(-(x - x0) ** 2 / (2 * sigma ** 2))
+
+def gauss_fit(x, y):
+    mean = sum(x * y) / sum(y)
+    sigma = np.sqrt(sum(y * (x - mean) ** 2) / sum(y))
+    inex = np.arange(len(spect_pos))
+    mean = inex[y.argmin()]
+    b = spect_pos[mean]
+    popt, pcov = curve_fit(gauss, x, y, p0=[min(y), max(y), sigma, mean])
+    return x, popt
+
+x, popt = gauss_fit(np.linspace(0, 7, 8), wavspec(B))
+plt.plot(wavspec(B))
+plt.plot(x, gaussian(x, *popt), color = "blue", label = "Gaussian fitting")

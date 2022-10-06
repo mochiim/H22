@@ -103,7 +103,7 @@ plt.show()
 # average spectra
 avg = np.mean(idata, axis = (0, 1)) # average spectra
 
-def gaussian(x, d, a, b, c):#d, a, b, c):
+def gaussian(x, d, a, c, b):
     """
     Gaussian fitting of emission and absorption lines
     a: the amplitude of the gaussian.
@@ -111,22 +111,51 @@ def gaussian(x, d, a, b, c):#d, a, b, c):
     c: the standard deviation.
     d: the constant term, y-value of the baseline.
     """
-    return d + a * np.exp(-(x - b)**2 / (2 * c**2))
+    return a*np.exp(-((x - b)**2) / (2*c**2)) + d
 
+"""
 def fitting(y):
-    """
-    y: spectra line to be fitted with a gaussian curve
-    """
+    #funker
     x = np.linspace(0, 7, 8)
     mean = sum(x * y) / sum(y)
     sigma = np.sqrt(sum(y * (x - mean)**2) / sum(y))
-    inex = np.arange(len(spect_pos))
-    mean = inex[y.argmin()]
-    b = spect_pos[mean]
     popt, pcov = curve_fit(gaussian, x, y, (np.min(y) - np.max(y), np.max(y), sigma, 2))
-    #popt, pcov = curve_fit(gaussian, x, y, (min(y) max(y), max(y), sigma, 2))
     x = np.linspace(0, 7, 1000)
     return x, popt
+"""
+
+
+def fitting(y):
+    # funker pt.2
+    x = np.linspace(0, 7, 8)
+    mean = sum(x * y) / sum(y)
+    sigma = np.sqrt(sum(y * (x - mean)**2) / sum(y))
+    popt, pcov = curve_fit(gaussian, x, y, (np.min(y) - np.max(y), np.max(y), sigma, np.argmin(y)))
+    x = np.linspace(0, 7, 1000)
+    return x, popt
+
+
+"""
+def fitting(y):
+    # det jeg skal gjøre
+    x = np.linspace(0, 7, 8)
+    #x = spect_pos
+    mean = sum(x * y) / sum(y)
+    sigma = np.sqrt(sum(y * (x - mean)**2) / sum(y))
+
+    a = np.min(y) - np.max(y)
+    index = np.where(y == np.min(y))[0][0]
+    b = spect_pos[index]
+    c = 0.05
+    d = np.max(y)
+    est = (a, b, c, d)
+
+    #popt, pcov = curve_fit(gaussian, x, y, est)
+    popt, pcov = curve_fit(gaussian, x, y, (np.min(y) - np.max(y), np.max(y), sigma, 2))
+    x = np.linspace(0, 7, 1000)
+    return x, popt
+
+"""
 
 def doppler(y):
     """
@@ -139,6 +168,17 @@ def doppler(y):
     lambdaobs = popt[1]
     v  = ((lambdaobs - 6173)/6173)*sc.c
     return v
+
+dop = np.zeros((idata.shape[0], idata.shape[1]))
+
+for i in range(idata_cut.shape[0]):
+    for j in range(idata_cut.shape[1]):
+        y = idata[i, j]
+        dop[i, j] = doppler(y)
+        print(dop[i, j])
+
+
+
 
 # plotting spectral lines and their gaussian fitting of 4 points in a sub plot
 """
@@ -202,20 +242,3 @@ plt.xlabel(r"Wavelength $\lambda_i$", fontsize = 20)
 plt.ylabel("Intensity", fontsize = 20)
 plt.show()
 """
-
-def gauss(x, H, A, x0, sigma):
-    return H + A * np.exp(-(x - x0) ** 2 / (2 * sigma ** 2))
-
-def gauss_fit(x, y):
-    mean = sum(x * y) / sum(y)
-    sigma = np.sqrt(sum(y * (x - mean) ** 2) / sum(y))
-    inex = np.arange(len(spect_pos))
-    mean = inex[y.argmin()]
-    b = spect_pos[mean]
-    popt, pcov = curve_fit(gauss, x, y, p0=[min(y), max(y), sigma, mean])
-    return x, popt
-
-x, popt = gauss_fit(np.linspace(0, 7, 8), wavspec(A))
-plt.plot(wavspec(A))
-plt.plot(x, gaussian(x, *popt), color = "blue", label = "Gaussian fitting")
-plt.show()
