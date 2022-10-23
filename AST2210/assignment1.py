@@ -6,6 +6,7 @@ from scipy.optimize import curve_fit
 import scipy.constants as sc
 import os
 import seaborn as sns
+from mpl_toolkits import mplot3d
 sns.color_palette("bright")
 sns.set_theme()
 sns.set_style("darkgrid")
@@ -71,9 +72,10 @@ def inplot():
     ax.set_ylabel("y [idy]", fontsize = 18)
     ax.add_patch(rect) # sub field of view
     fig.tight_layout()
-    #plt.savefig("intensitypoints.png")
+    #plt.savefig("intensityplot.png")
 
 # intensity plot
+
 """
 inplot()
 plt.scatter(A[0], A[1], label  = "A", color = "dodgerblue")
@@ -175,10 +177,26 @@ for i in range(idata_cut.shape[0]):
     for j in range(idata_cut.shape[1]):
         y = idata[i, j]
         dop[i, j] = doppler(y)
-        print(dop[i, j])
 
+x, poptA = fitting(wavspec(A))
+plt.plot(wavspec(A), ls = "--", lw = 1, marker = "x", label = "Spectra for point A")
+plt.plot(x, gaussian(x, *poptA), label = "Gaussian fitting for point A")
+x, poptB = fitting(wavspec(B))
+plt.plot(wavspec(B), ls = "--", lw = 1, marker = "x", label = "Spectra for point B")
+plt.plot(x, gaussian(x, *poptB), label = "Gaussian fitting for point B")
+x, poptC = fitting(wavspec(C))
+plt.plot(wavspec(C), ls = "--", lw = 1, marker = "x", label = "Spectra for point C")
+plt.plot(x, gaussian(x, *poptC), label = "Gaussian fitting for point C")
+x, poptD = fitting(wavspec(D))
+plt.plot(wavspec(D), ls = "--", lw = 1, marker = "x", label = "Spectra for point D")
+plt.plot(x, gaussian(x, *poptD), label = "Gaussian fitting for point D")
 
-
+plt.title(f"Spectra lines", fontsize = 20)
+plt.xlabel(r"Wavelength $\lambda_i$", fontsize = 18)
+plt.ylabel("Intensity", fontsize = 18)
+plt.legend(prop={'size': 12})
+plt.savefig("spectralinesgauss.png")
+plt.show()
 
 # plotting spectral lines and their gaussian fitting of 4 points in a sub plot
 """

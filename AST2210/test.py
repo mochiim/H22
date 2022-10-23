@@ -333,32 +333,33 @@ def doppler_map(title, field_of_view=None, save=None):
 
     if save == True:
 
-        plt.savefig(f'doppler_map_{title}.pdf')
+        plt.savefig(f'doppler_map_{title}.png')
 
 
 '''Plotting spectra for points A, B, C and D'''
-# for i in range(4):
+#for i in range(4):
 #
-#     plot_spectrum(obs_points[i], obs_names[i], add_average=True, save=True)
+#    plot_spectrum(obs_points[i], obs_names[i], add_average=True, save=True)
 
 '''Plotting the spectre at the points A, B, C and D together
 with the fittet Gauss curve'''
-# for i in range(4):
+#for i in range(4):
 #
-#     plot_spectrum(obs_points[i], obs_names[i], add_gaussian=True, save=True)
+#    plot_spectrum(obs_points[i], obs_names[i], add_gaussian=True, save=True)
 
 '''Estimating the central wavelength of Fe I'''
 #cent_wav = estimate_central_wavelength()
 
 '''Estimate doppler velocity for points A, B, C and D'''
-# print('\n\tPoint\tDoppler velocity\n')
+#print('\n\tPoint\tDoppler velocity\n')
 #
-# for i in range(4):
+#for i in range(4):
 #
-#     P = obs_names[i]
-#     vel_r = doppler_velocity_point(obs_points[i])
+#    P = obs_names[i]
+#    vel_r = doppler_velocity_point(obs_points[i])
 #
-#     print(f'\t{P}\t{vel_r:10.3f} m/s')
+#print(f'\t{P}\t{vel_r:10.3f} m/s')
+
 '''
 Point	Doppler velocity
 	A	 -3744.566 m/s
@@ -368,7 +369,7 @@ Point	Doppler velocity
 '''
 
 '''Creating doppler map'''
-doppler_map('sub FoV', field_of_view='sub', save=True)
+#doppler_map('sub FoV', field_of_view='sub', save=True)
 doppler_map('full FoV', save=True)
 
 
