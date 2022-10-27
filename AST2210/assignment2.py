@@ -2,6 +2,9 @@ import numpy as np
 import matplotlib.pyplot as plt
 import seaborn as sns
 from scipy.optimize import curve_fit
+from scipy.integrate import simpson
+from numpy import trapz
+from scipy import integrate
 sns.color_palette("bright")
 sns.set_theme()
 sns.set_style("darkgrid")
@@ -42,15 +45,25 @@ def fitting(x, y):
 
 popt, pcov = fitting(v, T)
 perr = np.sqrt(np.diag(pcov)) # uncertainty [a, b, c, d]
-plt.plot(v, T, label = "data")
+#plt.plot(v, T, label = "data")
 plt.plot(v, gaussian(v, *popt), label = "Gaussian fit")
 plt.xlabel("Velocity [km/s]")
 plt.ylabel("Flux density [Jy]")
 plt.title("Gaussian fit of data")
+plt.fill_between(v, gaussian(v, *popt), step="pre", alpha=0.4, color = "orange")
 #plt.legend()
 #plt.savefig("gaussian.png")
 
+a = popt[0]
+b = popt[1]
+c = popt[2]
+d = popt[3]
+g = lambda x: a*np.exp(-((x - b)**2) / (2*c**2)) + d
+areagauss = integrate.quadrature(g, -1000, 1000)
+plt.text(1, 5, "area")
 
+
+"""
 fwhm = 2*np.sqrt(2 * np.log(2))*popt[2]
 hm = popt[0] / 2 # half max
 fw = np.linspace(popt[1] - fwhm/2, popt[1] + fwhm/2, 2) # full width
@@ -60,17 +73,15 @@ un = np.linspace((popt[1]+2.24556722) - fwhm/2, (popt[1]+2.24556722) + fwhm/2, 2
 
 plt.plot(fw, np.array([hm, hm]), color='black', ls='dashed', lw=1)
 plt.text(popt[1] + 5, popt[0], '$S_\\nu^{peak}=$' + f'{popt[0]:.2f} $\pm$ ' + f'{perr[0]:.3f} Jy')
-plt.text(fw[1], hm, f"$FWHM$ = {fw[1] - fw[0]: .2f} $\pm$  {abs((fw[1]-fw[0]) - (un[1]-un[0])): .3f} km/s" )
+plt.text(fw[1], hm, f"$FWHM$ = {fw[1] - fw[0]: .2f} $\pm$ {abs((fw[1]-fw[0]) - (un[1]-un[0])): .3f} km/s" )
 plt.title("$S_\\nu^{peak}$ and FWHM")
 #plt.savefig("peakfwhm.png")
-"""
+
 plt.plot(v, T)
 plt.xlabel("Velocity [km/s]")
 plt.ylabel("Flux density [Jy]")
 plt.title("CO(2-1) line emission of the galaxy IRAS 13120-5453")
 """
 
-print(popt)
-print(perr)
 
-#plt.show()
+plt.show()
