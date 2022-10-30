@@ -22,7 +22,7 @@ Gaminv = 36 # conversion factor from antenna temperature to flux density
 # galaxy IRAS 13120-5453
 DL = 139.9 # luminosity distance [Mpc]
 z = 0.0308 # redshift
-vobs = 23658 # observerved frequency [GHz]
+vrest = 223.658 # rest frequency [GHz]
 
 datafile = "/Users/rebeccanguyen/Documents/GitHub/H22/IRAS13120_spec.txt"
 
@@ -57,6 +57,7 @@ def fitting(x, y):
 # gaussian curve
 popt, pcov = fitting(v, T)
 perr = np.sqrt(np.diag(pcov)) # uncertainty [a, b, c, d]
+print(perr)
 
 # calculate fwhm
 fwhm = 2*np.sqrt(2 * np.log(2))*popt[2]
@@ -81,19 +82,22 @@ rmse = np.sqrt(mse)
 SN = popt[0]/rmse
 SNerror = ((popt[0] + perr[0])/rmse) - SN
 
-def lineluminosity(vobs, z, DL, lineflux):
+def lineluminosity(vrest, z, DL, lineflux):
     """
     vobs = observed frequency
     z = redshift
     DL = luminosity distance
     lineflux = total line flux
     """
-    return (3.25*1e7)*(DL**2 / (vobs**2*((1 + z)**3)))*lineflux
+    vobs = vrest/(1 + z)
+    return ( (3.25*1e7)*(DL**2) / (vobs**2*((1 + z)**3)) )*lineflux
 
-linelum = lineluminosity(vobs, z, DL, areagauss[0])
-linelumerror = lineluminosity(vobs, z, DL, areagauss[0] + areagauss[1])
-print(f"Line luminosity: {linelum} +- {linelumerror - linelum} ) [K km/s pc^2")
+linelum = lineluminosity(vrest, z, DL, areagauss[0])
+linelumerror = lineluminosity(vrest, z, DL, areagauss[0] + areagauss[1])
+print(f"Line luminosity: {linelum} +- {linelumerror - linelum} ) [K km/s pc^2]")
 
+vobs = vrest/(1 + z)
+print("vobs", vobs)
 
 
 def totmolgasmas(lco, lcoerror):
@@ -101,12 +105,12 @@ def totmolgasmas(lco, lcoerror):
     Total molecular gas mass
     """
     aco = 1.7 # [(K km s^-1 pc^2)^-1]
-    acoerror = 0.4*const.M_sun.value # solar mass in unit kg
-    return aco*lco, ((aco+acoerror)*(lco+lcoerror)) - (aco*lco)
+    acoerror = 0.4 #*const.M_sun.value # solar mass in unit kg
+    return aco*lco, (aco+acoerror)*lco
 
 tmgm, er = totmolgasmas(linelum, linelumerror)
-print(f"Total moelcular gas mas: {tmgm} +- {er} [(K km s^-1 pc^2)^-1]")
-
+print(f"Total molecular gas mas: {tmgm} +- {er - tmgm} [(K km s^-1 pc^2)^-1]")
+print(rmse)
 
 
 """
