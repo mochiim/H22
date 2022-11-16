@@ -20,17 +20,19 @@ wava, fluxa = read_file(arm)
 wav2, flux2 = read_file(arm2)
 """
 fig, ax = plt.subplots(3, figsize=(7, 5))
-fig.suptitle(f"Spectrum from 3 regions ", fontsize=16)
+fig.suptitle(f"Spectra from 3 regions ", fontsize=16)
 ax[0].plot(wavn, fluxn, color = "black", label = "Nucleus, (164, 155)px", lw = 1)
 ax[1].plot(wava, fluxa, color = "black", lw = 1, label = "Upper arm, 82, 239)px")
 ax[2].plot(wav2, flux2, color = "black", lw = 1, label = "Lower arm, (150, 100)px")
 ax[0].legend()
 ax[1].legend()
 ax[2].legend()
-fig.savefig("totspec.png")
+fig.savefig("1totspec.png")
+
+"""
 
 fig, ax = plt.subplots(3, figsize=(7, 5))
-fig.suptitle(f"Spectrum from 3 regions, $\lambda \in$[{wavn[1400]:.1f}, {wavn[1800]:.1f}] Å", fontsize=16)
+fig.suptitle(f"Spectra from 3 regions, $\lambda \in$[{wavn[1400]:.1f}, {wavn[1800]:.1f}] Å", fontsize=16)
 ax[0].plot(wavn[1400:1800], fluxn[1400:1800], color = "black", label = "Nucleus, (164, 155)px", lw = 1)
 ax[0].axvline(6599.2, color = 'r', label = r'H$\alpha$', ls = '--')
 ax[0].axvline(6619.9, color = 'b', label = '[NII]', ls = '--')
@@ -62,11 +64,12 @@ ax[2].axvline(6754.2, color = 'g', label = '[SII]', ls = '--')
 ax[2].axvline(6768.6, color = 'g', ls = '--')
 
 
-fig.savefig("spectra_highwave.png")
+fig.savefig("11spectra_highwave.png")
  #####
+
 """
 fig, ax = plt.subplots(3, figsize=(7, 5))
-fig.suptitle(f"Spectrum from 3 regions, $\lambda \in$[{wavn[0]:.1f}, {wavn[500]:.1f}] Å", fontsize=16)
+fig.suptitle(f"Spectra from 3 regions, $\lambda \in$[{wavn[0]:.1f}, {wavn[500]:.1f}] Å", fontsize=16)
 ax[0].plot(wavn[:500], fluxn[:500], color = "black", lw = 1, label = "(164, 155)px")
 ax[0].axvline(4888.2, color = "c", ls = '--', label = r"H$\beta$")
 ax[0].axvline(5034.6, color = "m", ls = '--', label = "[OIII]")
@@ -93,6 +96,6 @@ ax[2].set_xlabel("Wavelength [Å]")
 
 
 
-fig.savefig("spectra_wavelow.png")
-
+fig.savefig("1spectra_wavelow.png")
+"""
 plt.show()
