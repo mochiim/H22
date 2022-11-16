@@ -30,14 +30,15 @@ spect = np.mean(avg, -1)
 
 flux_mean = np.nanmean(data,0)
 plt.figure(figsize = (7,7)) # setting the size of the image
-plt.title(r"Average flux density in the range $\lambda \in [4750, 9351] \AA{}$")
+#plt.title(r"Average flux density in the range $\lambda \in [4750, 9351] \AA{}$")
+plt.title("Regions in which we extract spectrum")
 im = plt.imshow(np.flip(np.nanmean(data, 0), 0), cmap = "gray", vmin = 0, vmax = 2137)
-plt.scatter(164, -160 + 320, 5, label = "1")
-plt.scatter(82, -239 + 320, 5, label = "2")
-plt.scatter(150, -100 + 320, 5, label = "3")
-#plt.colorbar(im,fraction = 0.046, pad = 0.04, label = "Flux density [$10^{-20}$erg s$^{-1}$cm$^{-2}\AA{}^{-1}$]")
-#plt.savefig("2D_img.png")
+plt.scatter(164, -160 + 320, label = "(164, 155)")
+plt.scatter(82, -239 + 320, label = "(82, 239)")
+plt.scatter(150, -100 + 320, label = "(150, 100)")
+plt.colorbar(im,fraction = 0.046, pad = 0.04, label = "Flux density [$10^{-20}$erg s$^{-1}$cm$^{-2}\AA{}^{-1}$]")
 plt.legend()
+plt.savefig("region.png")
 plt.show()
 
 
